@@ -1,3 +1,10 @@
+/***********************************************************************
+************************************************************************
+GENERIC STYLES
+************************************************************************
+************************************************************************/
+
+
 /*Border Box Fix*/
 html{
    box-sizing: border-box;
@@ -8,6 +15,22 @@ html{
 }
 
 
+/***********************************************************************
+SOME HELPFUL DEFINITIONS
+************************************************************************/
+.invert { filter: invert(100%); }
+
+
+
+
+
+/***********************************************************************
+************************************************************************
+NAV STYLES
+************************************************************************
+************************************************************************/
+
+/* Small top banner styles */
 
 .preNavBanner{
    width: 100%;
@@ -27,7 +50,7 @@ html{
 
 }
 
-
+/* Main Top image styles */
 .topImgWrapper{
    width:100%;
    height:75vh;
@@ -38,6 +61,9 @@ html{
    background-position: center top;
    background-size: cover;
 }
+
+/* Primary Nav (within image wrapper) styles */
+
 .topNav{
    position:relative;
    top:5px;
@@ -49,7 +75,7 @@ html{
    list-style: none;
    display: inline-flex;
    padding: 10px 20px;
-   background-color: rgb(120, 120, 120, 0.3)
+   background-color: rgb(120, 120, 120, 0.3);
 }
 .topNav li a{
    font-size: 1.2em;
@@ -64,6 +90,17 @@ html{
       display: none;
    }
 }
+
+
+/* Scrolling Fixed Nav (follows page as scroll) styles */
+
+
+
+
+
+/* Menu Button Nav styles */
+
+
 .menuButton{
    position:absolute;
    top: 20px;
@@ -97,56 +134,79 @@ html{
 
 
 .twoShot{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
    width:100%;
 }
 .firstPanel{
-   float: left;
-   width:50%;
    height:50vh;
+   padding: 20px;
    overflow:hidden;
    position:relative;
-   background-image: url(../images/helloquence-OQMZwNd3ThU-unsplash.jpg);
+   color: white;
+   /* background-image: url(../images/helloquence-OQMZwNd3ThU-unsplash.jpg);
    background-blend-mode: overlay;
    background-repeat: no-repeat;
    background-position: center top;
-   background-size: cover;
-   background-color: rgb(255, 255, 255, 0.3);
+   background-size: cover; */
+   background-color: rgb(195, 0, 0);
    transition: background-color, 1s;
 }
+.firstPanel:hover{
+   background-color: rgb(170, 0, 0);
+   cursor: pointer;
+}
+.firstPanel img{
+   width: 120px;
+   display: block;
+   margin: 20px auto;
+}
 .secondPanel{
-   float:left;
-   width:50%;
    height:50vh;
+   padding: 20px;
    overflow:hidden;
    position:relative;
    background-image: url(../images/sheri-hooley-pOR3_BLtGq4-unsplash.jpg);
    background-blend-mode: overlay;
    background-repeat: no-repeat;
-   background-position: center top;
+   background-position: center bottom;
    background-size: cover;
-   background-color: rgb(255, 255, 255, 0.3);
+   background-color: rgb(255, 255, 255, 0.7);
    transition: background-color, 1s;
 }
-.firstPanel:hover, .secondPanel:hover{
-   background-color: rgb(255, 255, 255, 0.7);
+.secondPanel:hover{
+   background-color: rgb(255, 255, 255, 0.9);
    cursor: pointer;
 }
+
 .twoShot h1{
-   margin-top: 50px;
+   margin-top: 10px;
    width: 100%;
    text-align: center;
    font-size: 1.5em;
-   color: black;
 }
 .twoShot h2{
    margin-top: 5px;
    width: 100%;
    text-align: center;
    font-size: 1.2em;
-   color: black;
+}
+.secondPanel h2{
+   margin-bottom: 30px;
 }
 .twoShot p{
-   color: rgb(0, 0, 0);
    text-align: center;
-   padding: 20px;
+   padding: 0px 20px;
+}
+@media (max-width: 600px){
+   .twoShot{
+      grid-template-columns: 1fr;
+   }
+   .firstPanel, .secondPanel{
+      height: 50vh;
+   }
+   .secondPanel h1{
+      margin-top: 30px;
+   }
+   }
 }
