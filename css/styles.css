@@ -73,7 +73,7 @@ NAV STYLES
 .topNav{
    position:absolute;
    top:10px;
-   right: 10px;
+   right: 30px;
    display: inline-block;
 }
 .topNav ul{
@@ -82,14 +82,32 @@ NAV STYLES
 .topNav li{
    list-style: none;
    display: inline-flex;
-   padding: 10px 20px;
+   padding: 0;
    background-color: rgb(120, 120, 120, 0.3);
+}
+.topNav li:last-of-type{
+   background-color: rgb(195, 0, 0);
+   transition: background-color, 0.5s;
+}
+.topNav li:last-of-type:hover{
+   background-color: rgb(170, 0, 0);
 }
 .topNav li a{
    font-size: 1.2em;
    text-decoration: none;
+   padding: 10px 20px;
    color: white;
 }
+.donateNav a{
+   text-transform: uppercase;
+   transform: scaleY(0.8);
+   background-color: rgb(195, 0, 0);
+   transition: background-color, 0.5s;
+}
+.donateNav a:hover{
+   background-color: rgb(170, 0, 0);
+}
+
 @media (max-width: 750px){
    .topImgWrapper{
       height: 65vh;
@@ -115,24 +133,70 @@ NAV STYLES
    right: 40px;
    display: none;
 }
-.scrollNavOpenButton{
+.mobileNavOpenButton{
    width: 50px;
    height: 50px;
-   border: 6px solid white;
+   border: 5px solid white;
 }
-.scrollNavOpenButton a{
+.mobileNavOpenButton a{
+   position: relative;
    display: inline-block;
    width: 100%;
    height: 100%;
    background-color: rgb(176, 32, 191, 0.5);
 }
-.scrollNavMenu{
+.mobileNavOpenButton a:before{
+   display: inline-block;
+   content: " ";
+   position: absolute;
+   top: 25%;
+   left: 5px;
+   height: 60%;
+   width: 30px;
+   border-top: 5px solid white;
+   transform: rotate(0deg);
+
+   transition: transform, 0.5s;
+   transition: top, 0.5s;
+   transition: width, 0.5s;
+   transition: left, 0.5s;
+}
+.mobileNavOpenButton a:after{
+   display: inline-block;
+   content: " ";
+   position: absolute;
+   top: 15%;
+   left: 5px;
+   height: 60%;
+   width: 30px;
+   border-bottom: 5px solid white;
+   transform: rotate(0deg);
+
+   transition: transform, 0.5s;
+   transition: top, 0.5s;
+   transition: width, 0.5s;
+   transition: left, 0.5s;
+}
+.mobileNavOpenButton.isOpen a:before{
+   transform: rotate(40deg);
+   top: calc(25% + 5px);
+   width: 40px;
+   left: -6px;
+}
+.mobileNavOpenButton.isOpen a:after{
+   transform: rotate(-40deg);
+   top: calc(15% - 5px);
+   width: 40px;
+   left: -6px;
+}
+.mobileNavMenu{
+   display: none;
    margin-top: 5px;
    text-align: center;
    color: white;
    font-weight: bold;
 }
-.scrollNav{
+.mobileNav{
    float: right;
    display: none;
 }
@@ -167,6 +231,7 @@ TWO IMAGE ROW/COLUMN STYLES
    background-position: center top;
    background-size: cover; */
    background-color: rgb(195, 0, 0);
+   transition: background-color, 1s;
 }
 .firstPanel img{
    width: 120px;
