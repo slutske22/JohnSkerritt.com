@@ -61,15 +61,23 @@ NAV STYLES
    background-position: center top;
    background-size: cover;
 }
+#mainLogo{
+   position: relative;
+   top: 30px;
+   left: 20px;
+   height: 160px;
+}
 
 /* Primary Nav (within image wrapper) styles */
 
 .topNav{
-   position:relative;
-   top:5px;
+   position:absolute;
+   top:10px;
+   right: 10px;
+   display: inline-block;
 }
 .topNav ul{
-   width: auto;
+   /* width: auto; */
 }
 .topNav li{
    list-style: none;
@@ -123,7 +131,10 @@ NAV STYLES
    text-align: center;
    color: white;
    font-weight: bold;
-
+}
+.scrollNav{
+   float: right;
+   display: none;
 }
 @media (max-width: 750px){
    .menuButton{
@@ -131,6 +142,12 @@ NAV STYLES
    }
 }
 
+
+/***********************************************************************
+************************************************************************
+TWO IMAGE ROW/COLUMN STYLES
+************************************************************************
+************************************************************************/
 
 
 .twoShot{
@@ -140,7 +157,7 @@ NAV STYLES
 }
 .firstPanel{
    height:50vh;
-   padding: 20px;
+   padding: 0px 20px;
    overflow:hidden;
    position:relative;
    color: white;
@@ -150,20 +167,20 @@ NAV STYLES
    background-position: center top;
    background-size: cover; */
    background-color: rgb(195, 0, 0);
-   transition: background-color, 1s;
-}
-.firstPanel:hover{
-   background-color: rgb(170, 0, 0);
-   cursor: pointer;
 }
 .firstPanel img{
    width: 120px;
    display: block;
    margin: 20px auto;
 }
+.firstPanel:hover{
+   background-color: rgb(170, 0, 0);
+   cursor: pointer;
+}
+
 .secondPanel{
    height:50vh;
-   padding: 20px;
+   padding: 0px 20px;
    overflow:hidden;
    position:relative;
    background-image: url(../images/sheri-hooley-pOR3_BLtGq4-unsplash.jpg);
@@ -181,6 +198,7 @@ NAV STYLES
 
 .twoShot h1{
    margin-top: 10px;
+
    width: 100%;
    text-align: center;
    font-size: 1.5em;
@@ -190,6 +208,9 @@ NAV STYLES
    width: 100%;
    text-align: center;
    font-size: 1.2em;
+}
+.secondPanel h1{
+   margin-bottom: 30px;
 }
 .secondPanel h2{
    margin-bottom: 30px;
