@@ -91,14 +91,16 @@ NAV STYLES
    position:absolute;
    top:10px;
    right: 30px;
-   display: inline-block;
+   height: 60px;
 }
 .topNav.simple ul{
-   /* width: auto; */
+   display: flex;
+   flex-wrap: wrap;
 }
 .topNav.simple li{
    list-style: none;
    display: inline-flex;
+   margin: 0px 5px;
    padding: 0;
 }
 .topNav.simple li:last-of-type{
@@ -146,7 +148,7 @@ NAV STYLES
 }
 @media (max-width: 1224px){
    .topNav.scroll{
-      height: 40px;
+      height: 60px;
       padding: 5px;
    }
    .topNav.scroll ul{
@@ -194,7 +196,13 @@ NAV STYLES
 
 /*  Universal Nav rules */
 
-
+@media (max-width: 880px){
+   .donateNav{
+      position: fixed;
+      top: 110px;
+      right: 50px;
+   }
+}
 .donateNav a{
    display: block;
    width: 100%
