@@ -64,13 +64,14 @@ NAV STYLES
 
 }
 
+
 /* Main Top image styles */
 .topImgWrapper{
    width:100%;
-   height:75vh;
+   height:650px;
    overflow:hidden;
    position:relative;
-   background-image: url(../images/johnpolitician.jpg);
+   background-image: url(../images/unsplash1.jpg);
    background-repeat: no-repeat;
    background-position: center bottom;
    background-size: cover;
@@ -84,48 +85,132 @@ NAV STYLES
 
 /* Primary Nav (within image wrapper) styles */
 
-.topNav{
+.topNav.simple{
    position:absolute;
    top:10px;
    right: 30px;
    display: inline-block;
 }
-.topNav ul{
+.topNav.simple ul{
    /* width: auto; */
 }
-.topNav li{
+.topNav.simple li{
    list-style: none;
    display: inline-flex;
    padding: 0;
 }
-.topNav li:last-of-type{
+.topNav.simple li:last-of-type{
    background-color: rgb(195, 0, 0);
    transition: background-color, 0.5s;
 }
-.topNav li:last-of-type:hover{
+.topNav.simple li:last-of-type:hover{
    background-color: rgb(170, 0, 0);
 }
-.topNav li a{
-   font-size: 1.2em;
+.topNav.simple li a{
+   font-size: 1.4em;
    text-decoration: none;
    padding: 10px 20px;
    color: white;
    border-bottom: none;
 }
-.topNav li a:hover{
+@media (max-width: 1024px) {
+   .topNav.simple li a{
+      font-size: 1.2em;
+   }
+}
+.topNav.simple li a:hover{
    background-color: rgb(200, 0, 0, 0.7);
 }
 .donateNav a{
-   text-transform: uppercase;
-   transform: scaleY(0.8);
    background-color: rgb(195, 0, 0);
    transition: background-color, 0.5s;
    border-bottom: none;
+}
+.donateNav a span{
+   text-transform: uppercase;
+   transform: scaleY(0.8);
 }
 .donateNav a:hover{
    background-color: rgb(170, 0, 0);
    text-decoration: underline;
 }
+
+
+/*  Fixed Nav styles for when page scrolls */
+
+.topNav.scroll{
+   display: block;
+   width: 100%;
+   position:fixed;
+   top:0px;
+   background-color: white;
+   z-index: 10;
+   padding: 5px 10%;
+}
+.topNav.scroll ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+}
+.topNav.scroll li{
+   list-style: none;
+   padding: 0px;
+   margin: 0;
+}
+.topNav.scroll li:last-of-type{
+   background-color: rgb(195, 0, 0);
+   transition: background-color, 0.5s;
+}
+.topNav.scroll li:last-of-type:hover{
+   background-color: rgb(170, 0, 0);
+}
+.topNav.scroll li a{
+   font-size: 1.2em;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding: 10px 20px;
+   color: black;
+   border-bottom: none;
+}
+.topNav.scroll li a .topLink{
+   display: inline-block;
+   transform: scaleY(0.8);
+}
+@media (max-width: 1024px) {
+   .topNav.scroll li a{
+      font-size: 1.2em;
+   }
+}
+.topNav.scroll li a:hover{
+   background-color: rgb(200, 0, 0, 0.7);
+}
+.topNav.scroll .donateNav a{
+   display: block;
+   width: 100%
+   color: white;
+   background-color: rgb(195, 0, 0);
+   transition: background-color, 0.5s;
+   border-bottom: none;
+}
+.topNav.scroll .donateNav a span{
+   color: white;
+   text-transform: uppercase;
+   transform: scaleY(0.8);
+}
+.topNav.scroll .donateNav a:hover{
+   background-color: rgb(170, 0, 0);
+}
+.topNav.scroll .donateNav a span:hover{
+   text-decoration: underline;
+}
+
+
+
+
+/* both simple and scroll navs disappear at smaller screen sizies */
+
 
 @media (max-width: 750px){
    .topImgWrapper{
@@ -218,10 +303,6 @@ NAV STYLES
    color: white;
    font-weight: bold;
 }
-.mobileNav{
-   float: right;
-   display: none;
-}
 @media (max-width: 750px){
    .menuButton{
       display: inline-block;
@@ -247,6 +328,8 @@ TWO IMAGE ROW/COLUMN STYLES
    overflow:hidden;
    position:relative;
    color: white;
+   align-items: center;
+   justify-content: center;
    /* background-image: url(../images/helloquence-OQMZwNd3ThU-unsplash.jpg);
    background-blend-mode: overlay;
    background-repeat: no-repeat;
@@ -264,13 +347,18 @@ TWO IMAGE ROW/COLUMN STYLES
    background-color: rgb(170, 0, 0);
    cursor: pointer;
 }
+.secondPanel .panelContent{
+   max-width: 450px;
+}
 
 .secondPanel{
    height:50vh;
    padding: 0px 20px;
    overflow:hidden;
    position:relative;
-   background-image: url(../images/sheri-hooley-pOR3_BLtGq4-unsplash.jpg);
+   align-items: center;
+   justify-content: center;
+   background-image: url(../images/unsplash3.jpg);
    background-blend-mode: overlay;
    background-repeat: no-repeat;
    background-position: center bottom;
@@ -278,14 +366,17 @@ TWO IMAGE ROW/COLUMN STYLES
    background-color: rgb(255, 255, 255, 0.7);
    transition: background-color, 1s;
 }
+.secondPanel .panelContent{
+   max-width: 500px;
+}
 .secondPanel:hover{
    background-color: rgb(255, 255, 255, 0.9);
    cursor: pointer;
 }
 
+
 .twoShot h1{
    margin-top: 10px;
-
    width: 100%;
    text-align: center;
    font-size: 1.5em;
@@ -296,15 +387,18 @@ TWO IMAGE ROW/COLUMN STYLES
    text-align: center;
    font-size: 1.2em;
 }
-.secondPanel h1{
-   margin-bottom: 30px;
-}
-.secondPanel h2{
-   margin-bottom: 30px;
-}
 .twoShot p{
    text-align: center;
    padding: 0px 20px;
+}
+
+.secondPanel h1, .secondPanel h2{
+   margin-bottom: 30px;
+}
+@media (max-width: 1000px){
+   .secondPanel h1, .secondPanel h2{
+      margin-bottom: 10px;
+   }
 }
 @media (max-width: 600px){
    .twoShot{
@@ -331,7 +425,7 @@ HANNITY BANNER STYLES
    position: relative;
    width:100%;
    height:500px;
-   background-image: url(../images/JohnandHannity.jpg);
+   background-image: url(../images/unsplash2.jpg);
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
