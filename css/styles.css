@@ -83,7 +83,9 @@ NAV STYLES
    height: 160px;
 }
 
+/************************************************************************/
 /* Primary Nav (within image wrapper) styles */
+/************************************************************************/
 
 .topNav.simple{
    position:absolute;
@@ -122,8 +124,9 @@ NAV STYLES
    background-color: rgb(200, 0, 0, 0.7);
 }
 
-
-/*  Fixed Nav styles for when page scrolls */
+/************************************************************************/
+/* Scrolling Fixed Nav (follows page as scroll) styles */
+/************************************************************************/
 
 .topNav.scroll{
    display: block;
@@ -197,26 +200,9 @@ NAV STYLES
 
 
 
-/* both simple and scroll navs disappear at smaller screen sizies */
-
-
-@media (max-width: 750px){
-   .topImgWrapper{
-      height: 65vh;
-   }
-   .topNav{
-      display: none;
-   }
-}
-
-
-/* Scrolling Fixed Nav (follows page as scroll) styles */
-
-
-
-
-
-/* Menu Button Nav styles */
+/************************************************************************/
+/*  Mobile menu button styles */
+/************************************************************************/
 
 
 .menuButton{
@@ -233,9 +219,9 @@ NAV STYLES
 .mobileNavOpenButton a{
    position: relative;
    display: inline-block;
+   border: none;
    width: 100%;
    height: 100%;
-   background-color: rgb(176, 32, 191, 0.5);
 }
 .mobileNavOpenButton a:hover{
    border: none;
@@ -296,6 +282,76 @@ NAV STYLES
       display: inline-block;
    }
 }
+
+
+
+
+/************************************************************************/
+/*  simple navs disappear at smaller screen sizies */
+/************************************************************************/
+
+@media (max-width: 750px){
+   .topImgWrapper{
+      height: 65vh;
+   }
+   .topNav.simple{
+      display: none;
+   }
+}
+
+
+
+/************************************************************************/
+/*  At smaller screen size the scrolling nav changes format */
+/************************************************************************/
+
+
+@media (max-width: 750px){
+   .topNav.scroll{
+      padding: 5px;
+   }
+   .topNav.scroll ul{
+      width: 100%;
+   }
+   .topNav.scroll li{
+      display: none;
+   }
+   .topNav.scroll li:last-of-type{
+      display: block;
+      float: left;
+   }
+
+   .mobileNavOpenButton.scroll{
+      border-color: black;
+      position: fixed;
+      top: 5px;
+      right: 5px;
+      z-index: 12;
+   }
+   .mobileNavOpenButton.scroll a:before, .mobileNavOpenButton.scroll a:after{
+      border-color: black;
+   }
+}
+
+
+/************************************************************************/
+/*  Mobile nav styles */
+/************************************************************************/
+
+.topNav.mobileOpen{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: white;
+}
+.topNav.mobileOpen li a{
+   color: black;
+}
+
+
+
+
 
 
 /***********************************************************************
