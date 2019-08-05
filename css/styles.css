@@ -146,6 +146,7 @@ NAV STYLES
 }
 @media (max-width: 1224px){
    .topNav.scroll{
+      height: 40px;
       padding: 5px;
    }
    .topNav.scroll ul{
