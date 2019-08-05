@@ -17,6 +17,17 @@ body{
    width:100%;
    height: 100%;
 }
+a{
+   color: white;
+   text-decoration: none;
+   border-bottom: 1px solid white;
+}
+a:hover{
+   color: red;
+   text-decoration: none;
+   border-bottom: 1px solid red;
+
+}
 
 
 /***********************************************************************
@@ -87,7 +98,6 @@ NAV STYLES
    list-style: none;
    display: inline-flex;
    padding: 0;
-   background-color: rgb(120, 120, 120, 0.3);
 }
 .topNav li:last-of-type{
    background-color: rgb(195, 0, 0);
@@ -101,15 +111,21 @@ NAV STYLES
    text-decoration: none;
    padding: 10px 20px;
    color: white;
+   border-bottom: none;
+}
+.topNav li a:hover{
+   background-color: rgb(200, 0, 0, 0.7);
 }
 .donateNav a{
    text-transform: uppercase;
    transform: scaleY(0.8);
    background-color: rgb(195, 0, 0);
    transition: background-color, 0.5s;
+   border-bottom: none;
 }
 .donateNav a:hover{
    background-color: rgb(170, 0, 0);
+   text-decoration: underline;
 }
 
 @media (max-width: 750px){
@@ -302,10 +318,15 @@ TWO IMAGE ROW/COLUMN STYLES
 }
 
 
+/***********************************************************************
+************************************************************************
+HANNITY BANNER STYLES
+************************************************************************
+************************************************************************/
 
 
-
-.hannityBanner{
+#hannityBanner{
+   position: relative;
    width:100%;
    height:500px;
    background-image: url(../images/JohnandHannity.jpg);
@@ -317,4 +338,50 @@ TWO IMAGE ROW/COLUMN STYLES
 
    color:white;
    padding: 30px
+}
+
+#hannityBanner p{
+   display: inline-block;
+   width: 50%;
+   position: absolute;
+   padding: 5%;
+   margin: 0;
+   bottom: 10px;
+   right: 20px;
+}
+@media (max-width: 600px){
+   #hannityBanner p{
+   width: 100%;
+   padding: 10%;
+   text-align: center;
+   }
+}
+
+.interview{
+   width: 100%;
+   display: inline-block;
+   padding: 30px;
+   column-count: 3;
+   -moz-column-count: 3;
+   -webkit-column-count: 3;
+   column-width: 300px;
+   -moz-column-width: 300px;
+   -webkit-column-with: 300px;
+   column-gap: 60px;
+   column-rule-style: solid;
+   column-rule-width: 1px;
+}
+.interview p{
+   text-align: justify;
+}
+span.SH{
+   color: rgb(0, 0, 0);
+   font-weight: bold;
+}
+span.JS{
+   color: rgb(170, 0, 0);
+   font-weight: bold;
+}
+span.SH:first-of-type,span.JS:first-of-type{
+   font-variant: small-caps;
 }
