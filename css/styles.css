@@ -196,11 +196,11 @@ NAV STYLES
 
 /*  Universal Nav rules */
 
-@media (max-width: 880px){
-   .donateNav{
-      position: fixed;
-      top: 110px;
-      right: 50px;
+@media (max-width: 950px){
+   .donateNav.scroll{
+      position: absolute;
+      top: 50px;
+      right: 19px;
    }
 }
 .donateNav a{

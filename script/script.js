@@ -5,14 +5,16 @@
 var navigation = document.querySelector(".topNav");
 
 window.addEventListener("scroll", function(){
-   if (window.scrollY > 200){
+   if (window.scrollY > 150){
       navigation.classList.remove("simple");
       navigation.classList.add("scroll");
       menuButton.classList.add("scroll");
+      document.querySelector(".donateNav").classList.remove("scroll");
    } else {
       navigation.classList.remove("scroll");
       navigation.classList.add("simple");
       menuButton.classList.remove("scroll");
+      document.querySelector(".donateNav").classList.add("scroll");
    }
 },false);
 
