@@ -357,7 +357,7 @@ HANNITY BANNER STYLES
    }
 }
 
-.interview{
+#interview{
    width: 100%;
    display: inline-block;
    padding: 30px;
@@ -371,8 +371,18 @@ HANNITY BANNER STYLES
    column-rule-style: solid;
    column-rule-width: 1px;
 }
-.interview p{
+#interview p{
    text-align: justify;
+}
+@media (max-width: 720px){
+   #interview{
+      padding: 50px;
+   }
+}
+@media (max-width: 600px){
+   #interview{
+      padding: 30px;
+   }
 }
 span.SH{
    color: rgb(0, 0, 0);
