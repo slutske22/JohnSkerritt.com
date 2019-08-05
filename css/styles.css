@@ -144,6 +144,14 @@ NAV STYLES
    padding: 0;
    margin: 0;
 }
+@media (max-width: 1224px){
+   .topNav.scroll{
+      padding: 5px;
+   }
+   .topNav.scroll ul{
+      justify-content: space-around;
+   }
+}
 .topNav.scroll li{
    list-style: none;
    padding: 0px;
@@ -169,14 +177,23 @@ NAV STYLES
    transform: scaleY(0.8);
 }
 @media (max-width: 1024px) {
-   .topNav.scroll li a{
-      font-size: 1.2em;
+   .topNav.scroll li a span{
+      font-size: 0.9em;
+   }
+}
+@media (max-width: 850) {
+   .topNav.scroll li a span{
+      font-size: 0.8em;
    }
 }
 .topNav.scroll li a:hover{
    color: white;
    background-color: rgb(200, 0, 0);
 }
+
+/*  Universal Nav rules */
+
+
 .donateNav a{
    display: block;
    width: 100%
@@ -196,7 +213,30 @@ NAV STYLES
 .donateNav a span:hover{
    text-decoration: underline;
 }
-
+#firstLI,#secondLI{
+   display: none;
+   list-style: none;
+   padding: 10px 20px;
+   font-size: 1.4em;
+   color: black;
+   font-family: serif;
+   font-weight: bold;
+   font-variant: small-caps;
+   letter-spacing: 3px;
+}
+@media(max-width: 750px){
+   #firstLI{
+      display: inline-block;
+   }
+}
+@media(max-width: 550px){
+   #firstLI{
+      display: none;
+   }
+   #secondLI{
+      display: inline-block;
+   }
+}
 
 
 
@@ -308,17 +348,19 @@ NAV STYLES
 
 @media (max-width: 750px){
    .topNav.scroll{
-      padding: 5px;
+      padding: 6px;
    }
    .topNav.scroll ul{
-      width: 100%;
+      display: inline-block;
+      width: 87%;
    }
    .topNav.scroll li{
       display: none;
    }
    .topNav.scroll li:last-of-type{
-      display: block;
-      float: left;
+      display: inline-block;
+      height: 100%;
+      float: right;
    }
 
    .mobileNavOpenButton.scroll{
