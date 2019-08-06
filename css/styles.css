@@ -68,10 +68,10 @@ NAV STYLES
 /* Main Top image styles */
 .topImgWrapper{
    width:100%;
-   height:650px;
+   height:620px;
    overflow:hidden;
    position:relative;
-   background-image: url(../images/unsplash1.jpg);
+   background-image: url(../images/johnpolitician.jpg);
    background-repeat: no-repeat;
    background-position: center bottom;
    background-size: cover;
@@ -82,11 +82,28 @@ NAV STYLES
    left: 20px;
    height: 160px;
 }
-/* @media (min-width: 1024px){
+@media (min-width: 1024px){
    #mainLogo{
       height: 200px;
    }
-} */
+}
+@media (min-width: 1400px){
+   #mainLogo{
+      height: 200px;
+      left: 60px;
+   }
+   .topNav.simple{
+      position:absolute;
+      top:10px;
+      right: 60px;
+      height: 60px;
+   }
+}
+@media (max-width: 650px){
+   #mainLogo{
+      height: 120px;
+   }
+}
 
 
 /************************************************************************/
