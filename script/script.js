@@ -9,12 +9,16 @@ window.addEventListener("scroll", function(){
       navigation.classList.remove("simple");
       navigation.classList.add("scroll");
       menuButton.classList.add("scroll");
-      document.querySelector(".donateNav").classList.remove("scroll");
+      document.querySelector(".donateNav").classList.remove("simple");
+      document.querySelector(".mobileNavOpenButton a span").classList.add("scroll")
+
    } else {
       navigation.classList.remove("scroll");
       navigation.classList.add("simple");
       menuButton.classList.remove("scroll");
-      document.querySelector(".donateNav").classList.add("scroll");
+      document.querySelector(".donateNav").classList.add("simple");
+      document.querySelector(".mobileNavOpenButton a span").classList.remove("scroll")
+
    }
 },false);
 
@@ -27,6 +31,7 @@ window.addEventListener("scroll", function(){
 
 
 var menuButton = document.querySelector(".mobileNavOpenButton");
+var mobileMenuIsOpen = false;
 
 menuButton.addEventListener("mouseover",function(){
    document.querySelector(".mobileNavMenu").style.display="block";
@@ -38,7 +43,15 @@ menuButton.addEventListener("mouseout",function(){
 
 menuButton.addEventListener("click",function(e){
    e.preventDefault();
-   menuButton.classList.add("isOpen");
+   if( !mobileMenuIsOpen){
+      menuButton.classList.add("isOpen");
+      document.querySelector(".mobileNavOpenButton a span").style.display="block";
+   } else {
+      menuButton.classList.remove("isOpen");
+      document.querySelector(".mobileNavOpenButton a span").style.display="none";
+   }
+   mobileMenuIsOpen = !mobileMenuIsOpen;
+
 },false)
 
 

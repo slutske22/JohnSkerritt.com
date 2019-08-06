@@ -82,6 +82,12 @@ NAV STYLES
    left: 20px;
    height: 160px;
 }
+/* @media (min-width: 1024px){
+   #mainLogo{
+      height: 200px;
+   }
+} */
+
 
 /************************************************************************/
 /* Primary Nav (within image wrapper) styles */
@@ -184,7 +190,7 @@ NAV STYLES
       font-size: 0.9em;
    }
 }
-@media (max-width: 850) {
+@media (max-width: 850px) {
    .topNav.scroll li a span{
       font-size: 0.8em;
    }
@@ -197,7 +203,7 @@ NAV STYLES
 /*  Universal Nav rules */
 
 @media (max-width: 950px){
-   .donateNav.scroll{
+   .donateNav.simple{
       position: absolute;
       top: 50px;
       right: 19px;
@@ -267,13 +273,15 @@ NAV STYLES
 }
 .mobileNavOpenButton a{
    position: relative;
-   display: inline-block;
+   display: flex;
+   align-items: center;
    border: none;
    width: 100%;
    height: 100%;
 }
 .mobileNavOpenButton a:hover{
    border: none;
+   color: white;
 }
 .mobileNavOpenButton a:before{
    display: inline-block;
@@ -290,6 +298,8 @@ NAV STYLES
    transition: top, 0.5s;
    transition: width, 0.5s;
    transition: left, 0.5s;
+   transition: border-top, 1s;
+
 }
 .mobileNavOpenButton a:after{
    display: inline-block;
@@ -299,15 +309,22 @@ NAV STYLES
    left: 5px;
    height: 60%;
    width: 30px;
-   border-bottom: 5px solid white;
+   border-bottom: 5px solid rgb(255, 255, 255, 1.0);
    transform: rotate(0deg);
 
    transition: transform, 0.5s;
    transition: top, 0.5s;
    transition: width, 0.5s;
    transition: left, 0.5s;
+   transition: border-bottom, 1s;
 }
 .mobileNavOpenButton.isOpen a:before{
+   border-top: rgb(255, 255, 255, 0);
+}
+.mobileNavOpenButton.isOpen a:after{
+   border-bottom: rgb(255, 255, 255, 0);
+}
+/* .mobileNavOpenButton.isOpen a:before{
    transform: rotate(40deg);
    top: calc(25% + 5px);
    width: 40px;
@@ -318,7 +335,16 @@ NAV STYLES
    top: calc(15% - 5px);
    width: 40px;
    left: -6px;
+} */
+.mobileNavOpenButton a span{
+   display: none;
+   transform: scaleX(1.2);
+   font-size: 40px;
+   width: 100%;
+   vertical-align: middle;
+   text-align: center;
 }
+
 .mobileNavMenu{
    display: none;
    margin-top: 5px;
@@ -382,6 +408,11 @@ NAV STYLES
    .mobileNavOpenButton.scroll a:before, .mobileNavOpenButton.scroll a:after{
       border-color: black;
    }
+
+   .mobileNavOpenButton a span.scroll{
+      color: black;
+   }
+
 }
 
 
