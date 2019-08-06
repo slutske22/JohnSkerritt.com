@@ -90,18 +90,12 @@ NAV STYLES
 @media (min-width: 1400px){
    #mainLogo{
       height: 200px;
-      left: 60px;
    }
    .topNav.simple{
       position:absolute;
       top:10px;
       right: 60px;
       height: 60px;
-   }
-}
-@media (max-width: 650px){
-   #mainLogo{
-      height: 120px;
    }
 }
 
@@ -263,10 +257,10 @@ NAV STYLES
 }
 @media(max-width: 550px){
    #firstLI{
-      display: none;
-   }
-   #secondLI{
       display: inline-block;
+   }
+   #donateNav{
+      display: none;
    }
 }
 
@@ -341,18 +335,6 @@ NAV STYLES
 .mobileNavOpenButton.isOpen a:after{
    border-bottom: rgb(255, 255, 255, 0);
 }
-/* .mobileNavOpenButton.isOpen a:before{
-   transform: rotate(40deg);
-   top: calc(25% + 5px);
-   width: 40px;
-   left: -6px;
-}
-.mobileNavOpenButton.isOpen a:after{
-   transform: rotate(-40deg);
-   top: calc(15% - 5px);
-   width: 40px;
-   left: -6px;
-} */
 .mobileNavOpenButton a span{
    display: none;
    transform: scaleX(1.2);
@@ -437,15 +419,34 @@ NAV STYLES
 /*  Mobile nav styles */
 /************************************************************************/
 
-.topNav.mobileOpen{
+.mobileNav{
+   display: none;
    position: fixed;
-   top: 0;
+   top: 60px;
+   left: 0px;
    width: 100%;
    height: 100%;
    background-color: white;
+   z-index: 20;
 }
-.topNav.mobileOpen li a{
+.mobileNav ul{
+   padding: 0;
+}
+.mobileNav li{
+   list-style-type: none;
+   border-top: 1px solid black;
+}
+.mobileNav li:last-of-type{
+   border-bottom: 1px solid black;
+}
+.mobileNav li a{
+   display: inline-block;
    color: black;
+   font-size: 1.5em;
+   font-variant: small-caps;
+   width: 100%;
+   height: 100%;
+   padding: 15px 40px;
 }
 
 
@@ -473,11 +474,6 @@ TWO IMAGE ROW/COLUMN STYLES
    color: white;
    align-items: center;
    justify-content: center;
-   /* background-image: url(../images/helloquence-OQMZwNd3ThU-unsplash.jpg);
-   background-blend-mode: overlay;
-   background-repeat: no-repeat;
-   background-position: center top;
-   background-size: cover; */
    background-color: rgb(195, 0, 0);
    transition: background-color, 1s;
 }
