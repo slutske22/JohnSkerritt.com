@@ -71,7 +71,7 @@ NAV STYLES
    height:620px;
    overflow:hidden;
    position:relative;
-   background-image: url(../images/johnpolitician.jpg);
+   background-image: url(../images/unsplash1.jpg);
    background-repeat: no-repeat;
    background-position: center bottom;
    background-size: cover;
@@ -629,4 +629,22 @@ span.JS{
 }
 span.SH:first-of-type,span.JS:first-of-type{
    font-variant: small-caps;
+}
+
+
+/***********************************************************************
+************************************************************************
+YOUT CENTER BANNER STYLES
+************************************************************************
+************************************************************************/
+
+.gospelOfJohn{
+   width:100%;
+   height:620px;
+   overflow:hidden;
+   position:relative;
+   background-image: url(../images/youthcrowd.jpg);
+   background-repeat: no-repeat;
+   background-position: center bottom;
+   background-size: cover;
 }
