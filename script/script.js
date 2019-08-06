@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-//                SCROLL NAV HEBAVIOR
+//                SCROLL NAV BEHAVIOR
 //////////////////////////////////////////////////////////////////////
 
 var navigation = document.querySelector(".topNav");
@@ -66,6 +66,10 @@ menuButton.addEventListener("click",function(e){
    mobileMenuIsOpen = !mobileMenuIsOpen;
 
 },false)
+
+if (window.innerWidth <= 750){
+   mobileMenu.style.display = "none";
+}
 
 
 
