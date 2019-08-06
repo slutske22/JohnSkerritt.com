@@ -67,9 +67,16 @@ menuButton.addEventListener("click",function(e){
 
 },false)
 
-if (window.innerWidth <= 750){
-   mobileMenu.style.display = "none";
+// little code to make sure that if user sizes window down to mobile size, then opens menu, then resizes the window to be too large without having closed the mobile menu
+
+function closeMobileNav(){
+   if (window.innerWidth >= 750){
+      mobileMenu.style.display = "none";
+   }
+   console.log("window resized");
 }
+
+window.onresize = closeMobileNav;
 
 
 
