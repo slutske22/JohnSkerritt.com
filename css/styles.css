@@ -8,7 +8,7 @@ GENERIC STYLES
 /*Border Box Fix*/
 html{
    box-sizing: border-box;
-   font-family: 'Merriweather', serif;
+   font-family: sans-serif;
 }
 *, *:before, *:after{
    box-sizing: inherit;
@@ -16,6 +16,8 @@ html{
 body{
    width:100%;
    height: 100%;
+   margin: 0;
+   padding: 0;
 }
 a{
    color: white;
@@ -467,6 +469,7 @@ TWO IMAGE ROW/COLUMN STYLES
    width:100%;
 }
 .firstPanel{
+   display: flex;
    height:50vh;
    padding: 0px 20px;
    overflow:hidden;
@@ -484,13 +487,13 @@ TWO IMAGE ROW/COLUMN STYLES
 }
 .firstPanel:hover{
    background-color: rgb(170, 0, 0);
-   cursor: pointer;
 }
 .secondPanel .panelContent{
    max-width: 450px;
 }
 
 .secondPanel{
+   display: flex;
    height:50vh;
    padding: 0px 20px;
    overflow:hidden;
@@ -509,8 +512,7 @@ TWO IMAGE ROW/COLUMN STYLES
    max-width: 500px;
 }
 .secondPanel:hover{
-   background-color: rgb(255, 255, 255, 0.9);
-   cursor: pointer;
+   background-color: rgb(255, 255, 255, 0.85);
 }
 
 
@@ -671,4 +673,29 @@ YOUT CENTER BANNER STYLES
    .gospelOfJohn h4{
       width: 100%;
    }
+}
+
+.firstPanel.gospel{
+   color: black;
+   align-items: flex-start;
+   padding: 20px;
+   background-image: url(../images/unsplash4.jpg);
+   background-blend-mode: overlay;
+   background-repeat: no-repeat;
+   background-position: center bottom;
+   background-size: cover;
+   background-color: rgb(255, 255, 255, 0.7);
+   transition: background-color, 1s;
+}
+.firstPanel.gospel:hover{
+   background-color: rgb(255, 255, 255, 0.85);
+}
+.secondPanel.gospel{
+   color: white;
+   background-image: none;
+   background-color: rgb(190, 0, 0);
+   transition: background-color, 1s;
+}
+.secondPanel.gospel:hover{
+   background-color: rgb(170, 0, 0);
 }
