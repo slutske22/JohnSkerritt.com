@@ -59,7 +59,7 @@ menuButton.addEventListener("click",function(e){
       menuButton.classList.remove("isOpen");
       document.querySelector(".mobileNavOpenButton a span").style.display="none";
       mobileMenu.style.display = "none";
-      if (window.pageYOffset > 150){
+      if (window.pageYOffset < 150){
          deactivateScrollMenu();
       }
    }
