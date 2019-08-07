@@ -676,9 +676,18 @@ POLICY SECTION STYLES
    color: white;
    font-family: serif;
    font-variant: small-caps;
+   margin: 0;
+}
+#policy div div:nth-of-type(2n){
+   /* background-color: rgb(220,220,220); */
+   background-color: white;
 }
 #policy div div:nth-of-type(2n) h1{
    background-color: rgb(0,0,100);
+}
+#policy div div:nth-of-type(2n+1){
+   background-color: rgb(220,220,220);
+   /* background-color: white; */
 }
 #policy div div:nth-of-type(2n+1) h1{
    background-color: rgb(170,0,0);
@@ -694,9 +703,29 @@ POLICY SECTION STYLES
    }
 }
 #policy p{
+   color: black;
    padding: 20px;
+   height: 100%;
+
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 80%;
+   background-blend-mode: overlay;
 }
 
+#policy .healthcare{
+   background-image: url(../images/icons/policy-healthcare.png);
+   /* filter: invert(100%); */
+}
+#policy .immigration{
+
+}
+#policy .foreign{
+
+}
+#policy .education{
+
+}
 
 /***********************************************************************
 ************************************************************************
