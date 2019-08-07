@@ -73,7 +73,8 @@ NAV STYLES
    height:620px;
    overflow:hidden;
    position:relative;
-   background-image: url(../images/unsplash1.jpg);
+   /* background-image: url(../images/unsplash1.jpg); */
+   background-image: url(../images/johnpolitician.jpg);
    background-repeat: no-repeat;
    background-position: center bottom;
    background-size: cover;
@@ -566,7 +567,8 @@ HANNITY BANNER STYLES
    position: relative;
    width:100%;
    height:500px;
-   background-image: url(../images/unsplash2.jpg);
+   /* background-image: url(../images/unsplash2.jpg); */
+   background-image: url(../images/JohnandHannity.jpg);
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;

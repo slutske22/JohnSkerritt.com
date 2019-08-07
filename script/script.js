@@ -48,6 +48,9 @@ menuButton.addEventListener("mouseout",function(){
    document.querySelector(".mobileNavMenu").style.display="none";
 },false);
 
+
+
+
 menuButton.addEventListener("click",function(e){
    e.preventDefault();
    if( !mobileMenuIsOpen){
@@ -67,17 +70,22 @@ menuButton.addEventListener("click",function(e){
 
 },false)
 
+
 // little code to make sure that if user sizes window down to mobile size, then opens menu, then resizes the window to be too large without having closed the mobile menu
 
 function closeMobileNav(){
    if (window.innerWidth >= 750){
+      menuButton.classList.remove("isOpen");
+      document.querySelector(".mobileNavOpenButton a span").style.display="none";
       mobileMenu.style.display = "none";
+      deactivateScrollMenu();
+      mobileMenuIsOpen = false;
    }
    console.log("window resized");
 }
 
 window.onresize = closeMobileNav;
-
+//not complete yet but probably good enough for most purposes
 
 
 
@@ -86,7 +94,14 @@ window.onresize = closeMobileNav;
 //                LINK PAGE ALERTS
 //////////////////////////////////////////////////////////////////////
 var donateButtons = document.querySelector(".donateNav");
+donateButtons.addEventListener("click",function(e){
+   alert("The Jonathan Skerritt Political Action Campaign (PAC) is not accepting donations at this time due to unresolved allegations against the PAC by the Securities and Exchange Commission.  Check back later.");
+   e.preventDefault();
+},false);
 
-donateButtons.addEventListener("click",function(){
-   alert("The Jonathan Skerritt Political Action Campaign (PAC) is not accepting donations at this time due to unresolved allegations against the PAC by the Securities and Exchange Commission.  Check back later.")
+
+var watchInterviewButton = document.querySelector("#interviewLink");
+watchInterviewButton.addEventListener("click",function(e){
+   alert("Video currently unavailable due to ongoing anti-libel lawsuits between Jonathan Skerritt Inc. and Fox news.");
+   e.preventDefault();
 },false);
