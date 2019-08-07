@@ -671,6 +671,7 @@ POLICY SECTION STYLES
    border-left: 15px solid rgb(170,0,0);
 } */
 #policy h1{
+   position: relative;
    padding: 15px;
    font-size: 1.3em;
    color: white;
@@ -706,26 +707,21 @@ POLICY SECTION STYLES
    color: black;
    padding: 20px;
    height: 100%;
-
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: 80%;
-   background-blend-mode: overlay;
+   z-index: 2;
 }
 
-#policy .healthcare{
-   background-image: url(../images/icons/policy-healthcare.png);
-   /* filter: invert(100%); */
+#policy .wrapper{
+   height: 100%;
+   width: 100%;
+   position: relative;
 }
-#policy .immigration{
+#policy .wrapper img{
+   position: absolute;
+   top: 0;
+   width: 80%;
+   z-index: 1;
+}
 
-}
-#policy .foreign{
-
-}
-#policy .education{
-
-}
 
 /***********************************************************************
 ************************************************************************
