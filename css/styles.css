@@ -672,14 +672,7 @@ POLICY SECTION STYLES
    font-family: serif;
    font-variant: small-caps;
    margin: 0;
-}
-#policy div div:nth-of-type(2n){
-   /* background-color: rgb(220,220,220); */
-   background-color: white;
-}
-#policy div div:nth-of-type(2n+1){
-   background-color: rgb(240,240,240);
-   /* background-color: white; */
+   white-space: nowrap;
 }
 #policy div div:nth-of-type(2n) h1{
    background-color: rgb(0,0,100);
@@ -698,7 +691,6 @@ POLICY SECTION STYLES
    }
 }
 
-
 #policy .wrapper{
    display: flex;
    position: relative;
@@ -707,18 +699,33 @@ POLICY SECTION STYLES
    height: 350px;
    width: 100%;
 }
+#policy .wrapper.grey{
+   background-color: rgb(240,240,240);
+}
 #policy .wrapper img{
    position: absolute;
-   width: 80%;
+   width: 70%;
    opacity: 1;
-   z-index: 1;
+}
+@media (max-width: 992px) {
+   #policy .wrapper img{
+      width: 60%;
+   }
+}
+@media (max-width: 768px) {
+   #policy .wrapper img{
+      width: 50%;
+   }
+}
+#policy .wrapper img.tooDark{
+   opacity: 0.3;
 }
 #policy .wrapper p{
    position: relative;
    color: black;
    padding: 20px;
    height: 100%;
-   z-index: 2;
+   /* z-index: 2; */
 }
 
 
