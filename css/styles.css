@@ -738,19 +738,22 @@ POLICY SECTION STYLES
    padding: 30px;
    height: 100%;
 }
-@media (max-width: 1414px) and (min-width: 992px){
+@media (max-width: 1414px) and (min-width: 1230px){
    #policy .wrapper p{
       font-size: 1.1em;
    }
 }
-@media (max-width: 1240px) and (min-width: 992px){
-   #policy div div{
-      height: 600px;
-   }
-   #policy .wrapper{
-      height: 570px;
+@media (max-width: 1230px) and (min-width: 1150px){
+   #policy .wrapper p{
+      font-size: 1em;
    }
 }
+@media (max-width: 1150px) and (min-width: 992px){
+   #policy .wrapper p{
+      font-size: 0.9em;
+   }
+}
+
 
 
 /***********************************************************************
@@ -855,7 +858,27 @@ YOUT CENTER BANNER STYLES
 .secondPanel.gospel:hover{
    background-color: rgb(170, 0, 0);
 }
+.secondPanel.gospel .panelContent{
+   width: 80%;
+   max-width: 450px;
+   min-width: 280px;
+}
 .gospel h1 span{
    display: inline-block;
    margin: 0px 10px;
+}
+@media (max-width: 866px) and (min-width: 600px) {
+   .secondPanel.gospel .panelContent p:first-of-type{
+      display: none;
+   }
+}
+@media (min-width: 867px) {
+   .secondPanel.gospel .panelContent p:last-of-type{
+      display: none;
+   }
+}
+@media (max-width: 599px) {
+   .secondPanel.gospel .panelContent p:last-of-type{
+      display: none;
+   }
 }
