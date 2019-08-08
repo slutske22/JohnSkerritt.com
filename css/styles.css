@@ -660,7 +660,7 @@ POLICY SECTION STYLES
 
 /* #policy div div is each cell within the section */
 #policy div div{
-   height: 400px;
+   height: 420px;
    padding: 0;
    align-self: stretch;
 }
@@ -706,7 +706,7 @@ POLICY SECTION STYLES
    position: relative;
    align-items: center;
    justify-content: center;
-   height: 350px;
+   height: 370px;
    width: 100%;
 }
 #policy .wrapper.grey{
@@ -734,6 +734,7 @@ POLICY SECTION STYLES
    position: relative;
    color: black;
    font-size: 1.2em;
+   text-align: justify;
    padding: 30px;
    height: 100%;
    /* z-index: 2; */
