@@ -706,7 +706,7 @@ POLICY SECTION STYLES
    position: relative;
    align-items: center;
    justify-content: center;
-   height: 370px;
+   height: 365px;
    width: 100%;
 }
 #policy .wrapper.grey{
@@ -737,7 +737,19 @@ POLICY SECTION STYLES
    text-align: justify;
    padding: 30px;
    height: 100%;
-   /* z-index: 2; */
+}
+@media (max-width: 1414px) and (min-width: 992px){
+   #policy .wrapper p{
+      font-size: 1.1em;
+   }
+}
+@media (max-width: 1240px) and (min-width: 992px){
+   #policy div div{
+      height: 600px;
+   }
+   #policy .wrapper{
+      height: 570px;
+   }
 }
 
 
