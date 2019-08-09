@@ -641,6 +641,17 @@ span.SH:first-of-type,span.JS:first-of-type{
    font-variant: small-caps;
 }
 
+#interview a{
+   float: right;
+   padding: 10px;
+   color: rgb(170, 0, 0);
+   border: 1px solid rgb(170, 0, 0);
+}
+#interview a:hover{
+   color: rgb(255, 255, 255);
+   background-color: rgb(170, 0, 0);
+}
+
 
 /***********************************************************************
 ************************************************************************
@@ -850,6 +861,7 @@ YOUT CENTER BANNER STYLES
    background-color: rgb(170, 0, 0);
 }
 .secondPanel.gospel .panelContent{
+   position: relative;
    width: 80%;
    max-width: 450px;
    min-width: 280px;
@@ -878,4 +890,18 @@ YOUT CENTER BANNER STYLES
       margin: 0;
       padding-bottom: 30px;
    }
+}
+
+
+#youthClickHere{
+   position: absolute;
+   bottom: 10px;
+   right:10px;
+   padding: 10px;
+   color: rgb(170, 0, 0);
+   border: 1px solid rgb(195, 0, 0);
+}
+#youthClickHere:hover{
+   color: rgb(255, 255, 255);
+   background-color: rgb(195, 0, 0);
 }
