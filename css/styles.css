@@ -938,6 +938,9 @@ footer .socialMedia h3{
    margin-bottom: 15px;
    margin-left: 3px;
 }
+footer .socialMedia a, footer .socialMedia a:hover{
+   border-bottom: none;
+}
 footer .socialMedia img{
    width: 50px;
    margin: 0px 3px;
@@ -948,7 +951,7 @@ footer .socialMedia img{
 }
 
 .footerFooter{
-   width: calc(100% - 40px);
+   width: calc(100% - 80px);
    margin: auto;
    border-top: 1px solid rgb(255,255,255,0.5);
    padding: 30px;
