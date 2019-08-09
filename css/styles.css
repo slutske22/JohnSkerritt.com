@@ -929,11 +929,13 @@ footer{
    color: white;
 }
 footer div{
-   justify-content: center;
+   justify-content: space-around;
 }
 footer div div{
-   margin: 40px;
+   margin: 20px 10px;
 }
+
+
 footer h3{
    font-size: 1.5em;
    margin-bottom: 25px;
@@ -973,9 +975,12 @@ footer .socialMedia img{
 }
 
 .footerFooter{
-   width: calc(100% - 80px);
+   width: calc(100%);
    margin: auto;
    border-top: 1px solid rgb(255,255,255,0.5);
-   padding: 30px;
-   font-size: 0.8em
+   padding: 30px 0px;
+
+   font-size: 0.7em;
+   color: rgb(255,255,255,0.7);
+   text-align: justify;
 }
