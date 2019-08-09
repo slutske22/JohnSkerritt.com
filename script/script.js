@@ -40,25 +40,27 @@ var menuButton = document.querySelector(".mobileNavOpenButton");
 var mobileMenu = document.querySelector(".mobileNav");
 var mobileMenuIsOpen = false;
 
-menuButton.addEventListener("mouseover",function(){
-   document.querySelector(".mobileNavMenu").style.display="block";
-},false);
+//creates a hover effect, when hovering over the nav menu button, the word "menu" appears below it
 
-menuButton.addEventListener("mouseout",function(){
-   document.querySelector(".mobileNavMenu").style.display="none";
-},false);
+   menuButton.addEventListener("mouseover",function(){
+      document.querySelector(".mobileNavMenu").style.display="block";
+   },false);
+
+   menuButton.addEventListener("mouseout",function(){
+      document.querySelector(".mobileNavMenu").style.display="none";
+   },false);
 
 
+//Toggles mobile menu open and closed when you click the menu button
 
-
-menuButton.addEventListener("click",function(e){
-   e.preventDefault();
-   if( !mobileMenuIsOpen){
+   function openMobileMenu(){
       menuButton.classList.add("isOpen");
       document.querySelector(".mobileNavOpenButton a span").style.display="block";
       mobileMenu.style.display = "block";
       activateScrollMenu()
-   } else {
+   }
+
+   function closeMobileMenu(){
       menuButton.classList.remove("isOpen");
       document.querySelector(".mobileNavOpenButton a span").style.display="none";
       mobileMenu.style.display = "none";
@@ -66,26 +68,53 @@ menuButton.addEventListener("click",function(e){
          deactivateScrollMenu();
       }
    }
-   mobileMenuIsOpen = !mobileMenuIsOpen;
 
-},false)
+
+   menuButton.addEventListener("click",function(e){
+      e.preventDefault();
+      if( !mobileMenuIsOpen){
+         openMobileMenu();
+      } else {
+         closeMobileMenu();
+      }
+      mobileMenuIsOpen = !mobileMenuIsOpen;
+
+   },false)
+
+
+// Closes mobile menu when a link is clicked
+
+var mobileLinks = document.querySelectorAll(".mobileNav a");
+
+for (var i = 0; i < mobileLinks.length; i++) {
+   (function(j){
+      mobileLinks[j].addEventListener("click",function(){
+         closeMobileMenu();
+         mobileMenuIsOpen = false;
+      },false);
+   })(i)
+
+}
+
+
+
+
+
 
 
 // little code to make sure that if user sizes window down to mobile size, then opens menu, then resizes the window to be too large without having closed the mobile menu
 
-function closeMobileNav(){
-   if (window.innerWidth >= 750){
-      menuButton.classList.remove("isOpen");
-      document.querySelector(".mobileNavOpenButton a span").style.display="none";
-      mobileMenu.style.display = "none";
-      deactivateScrollMenu();
-      mobileMenuIsOpen = false;
+   function closeMobileNav(){
+      if (window.innerWidth >= 750){
+         menuButton.classList.remove("isOpen");
+         document.querySelector(".mobileNavOpenButton a span").style.display="none";
+         mobileMenu.style.display = "none";
+         deactivateScrollMenu();
+         mobileMenuIsOpen = false;
+      }
+      console.log("window resized");
    }
-   console.log("window resized");
-}
-
-window.onresize = closeMobileNav;
-//not complete yet but probably good enough for most purposes
+   //not complete yet but probably good enough for most purposes
 
 
 

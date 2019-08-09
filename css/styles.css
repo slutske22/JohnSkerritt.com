@@ -322,13 +322,6 @@ NAV STYLES
    width: 30px;
    border-top: 5px solid white;
    transform: rotate(0deg);
-
-   transition: transform, 0.5s;
-   transition: top, 0.5s;
-   transition: width, 0.5s;
-   transition: left, 0.5s;
-   transition: border-top, 1s;
-
 }
 .mobileNavOpenButton a:after{
    display: inline-block;
@@ -340,12 +333,6 @@ NAV STYLES
    width: 30px;
    border-bottom: 5px solid rgb(255, 255, 255, 1.0);
    transform: rotate(0deg);
-
-   transition: transform, 0.5s;
-   transition: top, 0.5s;
-   transition: width, 0.5s;
-   transition: left, 0.5s;
-   transition: border-bottom, 1s;
 }
 .mobileNavOpenButton.isOpen a:before{
    border-top: rgb(255, 255, 255, 0);
@@ -469,7 +456,10 @@ NAV STYLES
 
 
 
-
+.navAnchor{
+   position: absolute;
+   top: -58px;
+}
 
 
 /***********************************************************************
@@ -658,6 +648,10 @@ POLICY SECTION STYLES
 ************************************************************************
 ************************************************************************/
 
+#policy{
+   position: relative;
+}
+
 /* #policy div div is each cell within the section */
 #policy div div{
    height: 420px;
@@ -838,16 +832,13 @@ YOUT CENTER BANNER STYLES
    color: black;
    align-items: flex-start;
    padding: 20px;
+   /* background-image: url(../images/Jon5.jpg); */
    background-image: url(../images/unsplash4.jpg);
-   background-blend-mode: overlay;
    background-repeat: no-repeat;
-   background-position: center bottom;
+   background-position: center center;
    background-size: cover;
-   background-color: rgb(255, 255, 255, 0.7);
-   transition: background-color, 1s;
-}
-.firstPanel.gospel:hover{
-   background-color: rgb(255, 255, 255, 0.85);
+   /* background-blend-mode: overlay;
+   background-color: rgb(255, 255, 255, 0.7); */
 }
 .secondPanel.gospel{
    color: white;
@@ -880,5 +871,11 @@ YOUT CENTER BANNER STYLES
 @media (max-width: 599px) {
    .secondPanel.gospel .panelContent p:last-of-type{
       display: none;
+   }
+}
+@media (max-width: 599px) {
+   .secondPanel.gospel h1{
+      margin: 0;
+      padding-bottom: 30px;
    }
 }
