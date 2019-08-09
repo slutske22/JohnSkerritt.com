@@ -144,3 +144,29 @@ document.getElementById("youthClickHere").addEventListener("click",function(e){
    alert('Jonathan Skerritt Christian Youth Center website currently unavailable while court case "Parents of Portland Maine vs. Jonathan Skerritt Youth Centers Inc." is still active.');
    e.preventDefault();
 },false);
+
+
+
+//////////////////////////////////////////////////////////////////////
+//                FOOTER BEHAVIOR
+//////////////////////////////////////////////////////////////////////
+
+var socialMediaIcons = document.querySelectorAll("footer .socialMedia img");
+
+//on hover of an icon, make the others dim away
+for (var i = 0; i < socialMediaIcons.length; i++) {
+   (function(j){
+      socialMediaIcons[j].addEventListener("mouseover",function(){
+         for (var k = 0; k < socialMediaIcons.length; k++) {
+            socialMediaIcons[k].classList.add("dimmed");
+         }
+         socialMediaIcons[j].classList.remove("dimmed");
+      },false);
+      //remove dimmed effect on mouseout
+      socialMediaIcons[j].addEventListener("mouseout",function(){
+         for (var k = 0; k < socialMediaIcons.length; k++) {
+            socialMediaIcons[k].classList.remove("dimmed");
+         }
+      },false);
+   })(i);
+}
