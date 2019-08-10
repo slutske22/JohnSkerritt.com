@@ -170,3 +170,24 @@ for (var i = 0; i < socialMediaIcons.length; i++) {
       },false);
    })(i);
 }
+
+
+//code to reveal "you can't be serious" when user tries to put in email
+
+var emailUI = document.querySelector("#emailInput");
+var zipUI = document.querySelector("#zipInput");
+
+var youCantBeSerious = "You can't be serious";
+var counter = 0;
+
+
+emailUI.addEventListener("keydown",function(e){
+   if (e.keyCode !== 8){
+      e.preventDefault();
+      counter++;
+      emailUI.value = youCantBeSerious.slice(0,counter);
+   }
+   if (e.keyCode === 8){
+      counter--;
+   }
+},false);
