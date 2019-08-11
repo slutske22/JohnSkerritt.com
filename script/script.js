@@ -168,6 +168,10 @@ for (var i = 0; i < socialMediaIcons.length; i++) {
             socialMediaIcons[k].classList.remove("dimmed");
          }
       },false);
+      socialMediaIcons[j].addEventListener("click",function(e){
+         e.preventDefault();
+         alert("Jonathan Skerritt does not participate in social media because Jonathan Skerritt hates you.")
+      },false);
    })(i);
 }
 

@@ -935,9 +935,19 @@ footer div div{
    margin: 20px 10px;
 }
 
-#piper{
+
+#piper .innerWrapper{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   align-items: center;
+}
+#piper .miniWrapper{
+   display: block;
+}
+#piper img{
    width: 120px;
    border-radius: 50%;
+   margin: 0px 15px;
 }
 
 
@@ -974,7 +984,7 @@ footer input:last-of-type{
 footer .socialMedia img{
    width: 50px;
    margin: 0px 3px;
-   transition: opacity, .25s;
+   transition: opacity, .35s;
 }
 .dimmed{
    opacity: 0.6
