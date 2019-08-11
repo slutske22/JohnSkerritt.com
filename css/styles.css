@@ -89,8 +89,8 @@ NAV STYLES
    height:620px;
    overflow:hidden;
    position:relative;
-   background-image: url(../images/unsplash1.jpg);
-   /* background-image: url(../images/johnpolitician.jpg); */
+   /* background-image: url(../images/unsplash1.jpg); */
+   background-image: url(../images/johnpolitician.jpg);
    background-repeat: no-repeat;
    background-position: center bottom;
    background-size: cover;
@@ -573,8 +573,8 @@ HANNITY BANNER STYLES
    position: relative;
    width:100%;
    height:500px;
-   background-image: url(../images/unsplash2.jpg);
-   /* background-image: url(../images/JohnandHannity.jpg); */
+   /* background-image: url(../images/unsplash2.jpg); */
+   background-image: url(../images/JohnandHannity.jpg);
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -846,8 +846,8 @@ YOUT CENTER BANNER STYLES
    color: black;
    align-items: flex-start;
    padding: 20px;
-   /* background-image: url(../images/Jon5.jpg); */
-   background-image: url(../images/unsplash4.jpg);
+   background-image: url(../images/Jon5.jpg);
+   /* background-image: url(../images/unsplash4.jpg); */
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -934,6 +934,12 @@ footer div{
 footer div div{
    margin: 20px 10px;
 }
+
+#piper{
+   width: 120px;
+   border-radius: 50%;
+}
+
 
 
 footer h3{
