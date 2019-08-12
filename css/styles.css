@@ -555,6 +555,9 @@ TWO IMAGE ROW/COLUMN STYLES
    .firstPanel, .secondPanel{
       height: 50vh;
    }
+   .secondPanel{
+      background-color: rgb(255, 255, 255, 0.85);
+   }
    .secondPanel h1{
       margin-top: 30px;
    }
