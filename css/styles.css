@@ -31,6 +31,14 @@ a:hover{
    border-bottom: 1px solid red;
 }
 
+.bannerWrapper{
+   position: relative;
+   margin: auto;
+   width: 100%;
+   height: 100%;
+   max-width: 1600px;
+}
+
 
 /***********************************************************************
 SOME HELPFUL DEFINITIONS
@@ -89,8 +97,8 @@ NAV STYLES
    height:620px;
    overflow:hidden;
    position:relative;
-   background-image: url(../images/unsplash1.jpg);
-   /* background-image: url(../images/johnpolitician.jpg); */
+   /* background-image: url(../images/unsplash1.jpg); */
+   background-image: url(../images/johnpolitician.jpg);
    background-repeat: no-repeat;
    background-position: center bottom;
    background-size: cover;
@@ -168,9 +176,10 @@ NAV STYLES
 
 .topNav.scroll{
    display: block;
-   width: 100%;
+   width: 100vw;
    position:fixed;
    top:0px;
+   right: 0px;
    background-color: white;
    z-index: 10;
    padding: 5px 10%;
@@ -478,6 +487,7 @@ TWO IMAGE ROW/COLUMN STYLES
 .firstPanel{
    display: flex;
    height:50vh;
+   max-height: 350px;
    padding: 0px 20px;
    overflow:hidden;
    position:relative;
@@ -502,6 +512,8 @@ TWO IMAGE ROW/COLUMN STYLES
 .secondPanel{
    display: flex;
    height:50vh;
+   max-height: 350px;
+
    padding: 0px 20px;
    overflow:hidden;
    position:relative;
@@ -576,8 +588,8 @@ HANNITY BANNER STYLES
    position: relative;
    width:100%;
    height:500px;
-   background-image: url(../images/unsplash2.jpg);
-   /* background-image: url(../images/JohnandHannity.jpg); */
+   /* background-image: url(../images/unsplash2.jpg); */
+   background-image: url(../images/JohnandHannity.jpg);
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -585,7 +597,6 @@ HANNITY BANNER STYLES
    background-blend-mode: overlay;
 
    color:white;
-   padding: 30px
 }
 
 #hannityBanner p{
@@ -611,9 +622,9 @@ HANNITY BANNER STYLES
    width: 100%;
    display: inline-block;
    padding: 30px;
-   column-count: 3;
-   -moz-column-count: 3;
-   -webkit-column-count: 3;
+   column-count: 4;
+   -moz-column-count: 4;
+   -webkit-column-count: 4;
    column-width: 300px;
    -moz-column-width: 300px;
    -webkit-column-with: 300px;
@@ -787,7 +798,7 @@ YOUT CENTER BANNER STYLES
    background-color: rgb(0, 0, 0, 0.5);
    background-blend-mode: overlay;
 
-   padding: 30px;
+   /* padding: 30px; */
 }
 .gospelOfJohn *{
    color: white;
@@ -850,8 +861,8 @@ YOUT CENTER BANNER STYLES
    color: black;
    align-items: flex-start;
    padding: 20px;
-   /* background-image: url(../images/Jon5.jpg); */
-   background-image: url(../images/unsplash4.jpg);
+   background-image: url(../images/Jon5.jpg);
+   /* background-image: url(../images/unsplash4.jpg); */
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -931,10 +942,10 @@ footer{
    background-color: rgb(0,0,100);
    color: white;
 }
-footer div{
+footer .bannerWrapper div{
    justify-content: space-around;
 }
-footer div div{
+footer .bannerWrapper div div{
    margin: 20px 10px;
 }
 

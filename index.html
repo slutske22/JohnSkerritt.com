@@ -24,26 +24,29 @@
 
          <div class="topImgWrapper">
 
-            <img id="mainLogo" src="images/icons/MainLogo.png">
+            <div class="bannerWrapper">
+               <img id="mainLogo" src="images/icons/MainLogo.png">
 
-            <nav role="navigation" class="topNav simple">
-               <ul>
-                  <li id="firstLI">JonathanSkerritt.com</li>
-                  <li id="secondLI">JohnSkerritt.com</li>
-                  <li><a href="#campaignTrail"><span class="topLink">Campaign Trail</span></a></li>
-                  <li><a href="#policyNav"><span class="topLink">Policy Stance</span></a></li>
-                  <li><a href="#youthNav"><span class="topLink">Youth Centers</span></a></li>
-                  <li><a href="#footerNav"><span class="topLink">Get Involved</span></a></li>
-                  <li class="donateNav simple" id="donateNav"><a href="#"><span class="d-block">Donate</span></a></li>
-               </ul>
-            </nav>
+               <nav role="navigation" class="topNav simple">
+                  <ul>
+                     <li id="firstLI">JonathanSkerritt.com</li>
+                     <li id="secondLI">JohnSkerritt.com</li>
+                     <li><a href="#campaignTrail"><span class="topLink">Campaign Trail</span></a></li>
+                     <li><a href="#policyNav"><span class="topLink">Policy Stance</span></a></li>
+                     <li><a href="#youthNav"><span class="topLink">Youth Centers</span></a></li>
+                     <li><a href="#footerNav"><span class="topLink">Get Involved</span></a></li>
+                     <li class="donateNav simple" id="donateNav"><a href="#"><span class="d-block">Donate</span></a></li>
+                  </ul>
+               </nav>
 
-            <div class="menuButton">
-               <div class="mobileNavOpenButton">
-                  <a href="#"><span>X</span></a>
+               <div class="menuButton">
+                  <div class="mobileNavOpenButton">
+                     <a href="#"><span>X</span></a>
+                  </div>
+                  <div class="mobileNavMenu">MENU</div>
                </div>
-               <div class="mobileNavMenu">MENU</div>
-            </div>
+            </div>  <!-- banner wrapper -->
+
 
 
             <nav role="navigation" class="mobileNav">
@@ -91,14 +94,12 @@
 
          <div id="hannityBanner" name="hannityBanner">
             <div id="campaignTrail" class="navAnchor"> </div>
-            <h1>Skerritt on Hannity</h1>
-<<<<<<< HEAD
-            <h2>October 21, 8:00 PM EST: <a id="interviewLink" href="">Watch the Interview</a></h2>
-            <p>Watch Senator Skerritt chat with old friend Sean Hannity about his campaign, policy stances, and his next moves.  Or, <a href="#interviewAnchor">read the transcript of the interview.</a>
-=======
-            <h2>August 21, 8:00 PM EST: <a id="interviewLink" href="">Watch the Interview</a></h2>
-            <p>Watch Senator Skerritt chat with old friend Sean Hannity about his campaign, policy stances, and his next moves.  Or, <a href="#interview">read the transcript of the interview.</a>
->>>>>>> f5401b3133145bcda079766d46a7987bd5466a0b
+            <div class="bannerWrapper p-5">
+               <h1>Skerritt on Hannity</h1>
+               <h2>October 21, 8:00 PM EST: <a id="interviewLink" href="">Watch the Interview</a></h2>
+               <p>Watch Senator Skerritt chat with old friend Sean Hannity about his campaign, policy stances, and his next moves.  Or, <a href="#interviewAnchor">read the transcript of the interview.</a>
+            </div>
+
          </div>
 
          <div id="interview">
@@ -190,10 +191,12 @@
 
 
          <div class="gospelOfJohn">
-            <div id="youthNav" class="navAnchor"> </div>
-            <h1>The Gospel of John.  Skerritt.</h1>
-            <h4>Senator Skerritt's centers for troubled christian youth have been making waves across the northeast.</h4>
-            <p><i>"What Skerritt is doing with these kids is inspiring.  Taking them off the streets and instilling in them the love for our lord and savior Jesus Christ has always been a passion of his."</i> <span>- Glenn Beck</span></p>
+            <div class="bannerWrapper p-5">
+               <div id="youthNav" class="navAnchor"> </div>
+               <h1>The Gospel of John.  Skerritt.</h1>
+               <h4>Senator Skerritt's centers for troubled christian youth have been making waves across the northeast.</h4>
+               <p><i>"What Skerritt is doing with these kids is inspiring.  Taking them off the streets and instilling in them the love for our lord and savior Jesus Christ has always been a passion of his."</i> <span>- Glenn Beck</span></p>
+            </div>
          </div>
 
 
@@ -222,44 +225,49 @@
 
          <footer class="container-fluid">
             <div id="footerNav" class="navAnchor"> </div>
-            <div class="row d-flex align-items-center">
 
-               <div id="piper" class="col-lg col-sm-12 col-md-5 d-flex ">
-                  <div class="innerWrapper">
-                     <img src="images/piper-small.jpg" alt="">
-                     <div class="miniWrapper">
-                        <h3 class="mb-1">Contact:</h3>
-                        <h5>Campaign Manager:</h5>
-                        <p class="m-0">Piper Skerritt</p>
-                        <p><a href="mailto:pskerritt@skerritt2020.com">pskerritt@skerritt2020.com</a></p>
+            <div class="bannerWrapper">
+               <div class="row d-flex align-items-center">
+
+                  <div id="piper" class="col-lg col-sm-12 col-md-5 d-flex ">
+                     <div class="innerWrapper">
+                        <img src="images/piper-small.jpg" alt="">
+                        <div class="miniWrapper">
+                           <h3 class="mb-1">Contact:</h3>
+                           <h5>Campaign Manager:</h5>
+                           <p class="m-0">Piper Skerritt</p>
+                           <p><a href="mailto:pskerritt@skerritt2020.com">pskerritt@skerritt2020.com</a></p>
+                        </div>
                      </div>
                   </div>
-               </div>
 
-               <div class="col-lg col-sm-12 col-md-5">
-                  <div class="innerWrapper">
-                     <h3>Get involved.<br>
-                        Join our movement:</h3>
-                     <input type="text" name="email" id="emailInput" placeholder="Enter your email"> <input type="text" name="zip" id="zipInput" placeholder="Zip Code">
+                  <div class="col-lg col-sm-12 col-md-5">
+                     <div class="innerWrapper">
+                        <h3>Get involved.<br>
+                           Join our movement:</h3>
+                        <input type="text" name="email" id="emailInput" placeholder="Enter your email"> <input type="text" name="zip" id="zipInput" placeholder="Zip Code">
+                     </div>
                   </div>
-               </div>
 
-               <div class="col-lg col-sm-12 col-md-12 d-flex socialMedia">
-                  <div class="innerWrapper">
-                     <h3 style="text-align:center;">Follow John:</h3>
-                     <a href=""><img src="images/icons/SMfacebook.png" alt="facebook" title="facebook" class="invert"></a>
-                     <a href=""><img src="images/icons/SMtwitter.png" alt="twitter" title="twitter" class="invert"></a>
-                     <a href=""><img src="images/icons/SMinstagram.png" alt="instagram" title="instagram" class="invert"></a>
-                     <a href=""><img src="images/icons/SMyoutube.png" alt="YouTube" title="YouTube" class="invert"></a>
+                  <div class="col-lg col-sm-12 col-md-12 d-flex socialMedia">
+                     <div class="innerWrapper">
+                        <h3 style="text-align:center;">Follow John:</h3>
+                        <a href=""><img src="images/icons/SMfacebook.png" alt="facebook" title="facebook" class="invert"></a>
+                        <a href=""><img src="images/icons/SMtwitter.png" alt="twitter" title="twitter" class="invert"></a>
+                        <a href=""><img src="images/icons/SMinstagram.png" alt="instagram" title="instagram" class="invert"></a>
+                        <a href=""><img src="images/icons/SMyoutube.png" alt="YouTube" title="YouTube" class="invert"></a>
+                     </div>
                   </div>
+
+               </div>    <!-- row -->
+
+
+               <div class="footerFooter">
+                  Paid for by the Jonathan Skerritt for President Political Action Committee. Not really though, this site is a joke.  If you took any part of this site seriously then you must be as dumb as Jonathan Skerritt thinks most people are. This site hand-coded by Seth Lutske with partial use of Bootstrap 4.3.1.
                </div>
-
-            </div>    <!-- row -->
-
-
-            <div class="footerFooter">
-               Paid for by the Jonathan Skerritt for President Political Action Committee. Not really though, this site is a joke.  If you took any part of this site seriously then you must be as dumb as Jonathan Skerritt thinks most people are. This site hand-coded by Seth Lutske with partial use of Bootstrap 4.3.1.
             </div>
+
+
 
          </footer>
 
