@@ -23,7 +23,7 @@
       <header role="header">
 
          <div class="preNavBanner">
-            <a id="topBanner" href="#"><p>Join us for Chattanooga, TN Rally Nov 12 ></p></a>
+            <a id="topBanner" data-toggle="modal" href="#topBannerModal"><p>Join us for Chattanooga, TN Rally Nov 12 ></p></a>
          </div>
 
          <div class="topImgWrapper">
@@ -39,7 +39,7 @@
                      <li><a href="#policyNav"><span class="topLink">Policy Stance</span></a></li>
                      <li><a href="#youthNav"><span class="topLink">Youth Centers</span></a></li>
                      <li><a href="#footerNav"><span class="topLink">Get Involved</span></a></li>
-                     <li class="donateNav simple" id="donateNav"><a href="#"><span class="d-block">Donate</span></a></li>
+                     <li class="donateNav simple" id="donateNav"><a data-toggle="modal" href="#donateModal"><span class="d-block">Donate</span></a></li>
                   </ul>
                </nav>
 
@@ -61,7 +61,7 @@
                   <li><a href="#footerNav">Get Involved</a></li>
                   <li><a href="https://www.costco.com/mens-clothing.html" target="_blank">Shop Skerritt.com</a></li>
                   <li><a href="#footerNav">Contact</a></li>
-                  <li><a href="#" id="donateNavMobile">Donate</a></li>
+                  <li><a id="donateNavMobile" data-toggle="modal" href="#donateModal">Donate</a></li>
                </ul>
             </nav>
 
@@ -107,27 +107,7 @@
          </div> <!-- hannityBanner -->
 
 
-         <!-- Modal for "Watch Inteview" Link -->
-         <div id="watchInterviewModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
 
-               <!-- modal content -->
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <button type="button" class="close"
-                        data-dismiss="modal">&times;</button>
-                  </div> <!-- modal-header -->
-                  <div class="modal-body">
-                     <p>Video currently unavailable due to an ongoing anti-libel lawsuit between Jonathan Skerritt Inc. and Fox news.</p>
-                  </div><!-- modal-body -->
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default"
-                        data-dismiss="modal">Close</button>
-                  </div>
-               </div> <!-- modal-content -->
-
-            </div> <!-- modal-dialog -->
-         </div> <!-- modal fade -->
 
 
 
@@ -229,17 +209,15 @@
             </div>
          </div>
 
-
          <div class="twoShot">
             <div class="firstPanel gospel d-flex">
                <div class="panelContent">
                   <h1><span>Family Man.</span>
                       <span>Political Activist.</span>
                       <span>Warrior for Christ.</span></h1>
-                      <a href="#" id="youthClickHere">Click here for more information</a>
+                      <a data-toggle="modal" href="#youthCenterModal" id="youthClickHere">Click here for more information</a>
                </div>
             </div>
-
             <div class="secondPanel gospel d-flex">
                <div class="panelContent">
                   <h1>Skerritt Centers for <span style="inline-block">Troubled Christian Youth</span></h1>
@@ -249,8 +227,9 @@
 
                </div>
             </div>
-
          </div> <!-- Twoshot container -->
+
+
 
 
          <footer class="container-fluid">
@@ -258,7 +237,6 @@
 
             <div class="bannerWrapper">
                <div class="row d-flex align-items-center">
-
                   <div id="piper" class="col-lg col-sm-12 col-md-5 d-flex ">
                      <div class="innerWrapper">
                         <img src="images/piper-small.jpg" alt="">
@@ -282,32 +260,146 @@
                   <div class="col-lg col-sm-12 col-md-12 d-flex socialMedia">
                      <div class="innerWrapper">
                         <h3 style="text-align:center;">Follow John:</h3>
-                        <a href=""><img src="images/icons/SMfacebook.png" alt="facebook" title="facebook" class="invert"></a>
-                        <a href=""><img src="images/icons/SMtwitter.png" alt="twitter" title="twitter" class="invert"></a>
-                        <a href=""><img src="images/icons/SMinstagram.png" alt="instagram" title="instagram" class="invert"></a>
-                        <a href=""><img src="images/icons/SMyoutube.png" alt="YouTube" title="YouTube" class="invert"></a>
+                        <a href="#socialMediaModal" data-toggle="modal"><img src="images/icons/SMfacebook.png" alt="facebook" title="facebook" class="invert"></a>
+                        <a href="#socialMediaModal" data-toggle="modal"><img src="images/icons/SMtwitter.png" alt="twitter" title="twitter" class="invert"></a>
+                        <a href="#socialMediaModal" data-toggle="modal"><img src="images/icons/SMinstagram.png" alt="instagram" title="instagram" class="invert"></a>
+                        <a href="#socialMediaModal" data-toggle="modal"><img src="images/icons/SMyoutube.png" alt="YouTube" title="YouTube" class="invert"></a>
                      </div>
                   </div>
 
                </div>    <!-- row -->
-
 
                <div class="footerFooter">
                   Paid for by the Jonathan Skerritt for President Political Action Committee. Not really though, this site is a joke.  If you took any part of this site seriously then you must be as dumb as Jonathan Skerritt thinks most people are. This site hand-coded by Seth Lutske with partial use of Bootstrap 4.3.1.
                </div>
             </div>
 
-
-
          </footer>
-
-
-
 
       </main>
 
 
+      <!------------------------------------------------->
+      <!------                                     ------>
+      <!-----        All my modals are here:        ----->
+      <!------                                     ------>
+      <!------------------------------------------------->
 
+
+      <!-- Modal for Chattanooga Banner  -->
+      <div id="topBannerModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+
+            <!-- modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close"
+                     data-dismiss="modal">&times;</button>
+               </div> <!-- modal-header -->
+               <div class="modal-body">
+                  <p>Rally cancelled temporarily.  Jonathan Skerritt PAC and Chattanooga City Council Events Administration in disputes over what is considered 'racially charged' political campaign signage.  Stay tuned for updates.</p>
+               </div><!-- modal-body -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default"
+                     data-dismiss="modal">Close</button>
+               </div>
+            </div> <!-- modal-content -->
+
+         </div> <!-- modal-dialog -->
+      </div> <!-- modal fade -->
+
+
+      <!-- Modal for ""Donate" Buttons -->
+      <div id="donateModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+
+            <!-- modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close"
+                     data-dismiss="modal">&times;</button>
+               </div> <!-- modal-header -->
+               <div class="modal-body">
+                  <p>The Jonathan Skerritt Political Action Campaign (PAC) is not accepting donations at this time due to unresolved allegations against the PAC by the Securities and Exchange Commission.  Check back later.</p>
+               </div><!-- modal-body -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default"
+                     data-dismiss="modal">Close</button>
+               </div>
+            </div> <!-- modal-content -->
+
+         </div> <!-- modal-dialog -->
+      </div> <!-- modal fade -->
+
+
+      <!-- Modal for "Watch Inteview" Link -->
+      <div id="watchInterviewModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+
+            <!-- modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close"
+                     data-dismiss="modal">&times;</button>
+               </div> <!-- modal-header -->
+               <div class="modal-body">
+                  <p>Video currently unavailable due to an ongoing anti-libel lawsuit between Jonathan Skerritt Inc. and Fox news.</p>
+               </div><!-- modal-body -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default"
+                     data-dismiss="modal">Close</button>
+               </div>
+            </div> <!-- modal-content -->
+
+         </div> <!-- modal-dialog -->
+      </div> <!-- modal fade -->
+
+
+
+      <!-- Modal for Youth Centers "Click for more info" Link -->
+      <div id="youthCenterModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+
+            <!-- modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close"
+                     data-dismiss="modal">&times;</button>
+               </div> <!-- modal-header -->
+               <div class="modal-body">
+                  <p>Video currently unavailable due to an ongoing anti-libel lawsuit between Jonathan Skerritt Inc. and Fox news.</p>
+               </div><!-- modal-body -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default"
+                     data-dismiss="modal">Close</button>
+               </div>
+            </div> <!-- modal-content -->
+
+         </div> <!-- modal-dialog -->
+      </div> <!-- modal fade -->
+
+
+      <!-- Modal for Youth Centers "Click for more info" Link -->
+      <div id="socialMediaModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+
+            <!-- modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close"
+                     data-dismiss="modal">&times;</button>
+               </div> <!-- modal-header -->
+               <div class="modal-body">
+                  <p>Jonathan Skerritt does not participate in social media because Jonathan Skerritt hates you.</p>
+               </div><!-- modal-body -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default"
+                     data-dismiss="modal">Close</button>
+               </div>
+            </div> <!-- modal-content -->
+
+         </div> <!-- modal-dialog -->
+      </div> <!-- modal fade -->
 
 
    </body>

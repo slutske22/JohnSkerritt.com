@@ -122,21 +122,21 @@ for (var i = 0; i < mobileLinks.length - 1; i++) {
 //////////////////////////////////////////////////////////////////////
 //                LINK PAGE ALERTS
 //////////////////////////////////////////////////////////////////////
-document.getElementById("topBanner").addEventListener("click",function(e){
-   alert("Rally cancelled temporarily.  Jonathan Skerritt PAC and Chattanooga City Council Events Administration in disputes over what is considered 'racially charged' political campaign signage.  Stay tuned for updates.");
-   e.preventDefault();
-},false);
+// document.getElementById("topBanner").addEventListener("click",function(e){
+//    alert("Rally cancelled temporarily.  Jonathan Skerritt PAC and Chattanooga City Council Events Administration in disputes over what is considered 'racially charged' political campaign signage.  Stay tuned for updates.");
+//    e.preventDefault();
+// },false);
 
-var donateButtons = document.querySelector(".donateNav");
-donateButtons.addEventListener("click",function(e){
-   alert("The Jonathan Skerritt Political Action Campaign (PAC) is not accepting donations at this time due to unresolved allegations against the PAC by the Securities and Exchange Commission.  Check back later.");
-   e.preventDefault();
-},false);
-
-document.getElementById("donateNavMobile").addEventListener("click",function(e){
-   alert("The Jonathan Skerritt Political Action Campaign (PAC) is not accepting donations at this time due to unresolved allegations against the PAC by the Securities and Exchange Commission.  Check back later.");
-   e.preventDefault();
-},false);
+// var donateButtons = document.querySelector(".donateNav");
+// donateButtons.addEventListener("click",function(e){
+//    alert("The Jonathan Skerritt Political Action Campaign (PAC) is not accepting donations at this time due to unresolved allegations against the PAC by the Securities and Exchange Commission.  Check back later.");
+//    e.preventDefault();
+// },false);
+//
+// document.getElementById("donateNavMobile").addEventListener("click",function(e){
+//    alert("The Jonathan Skerritt Political Action Campaign (PAC) is not accepting donations at this time due to unresolved allegations against the PAC by the Securities and Exchange Commission.  Check back later.");
+//    e.preventDefault();
+// },false);
 
 
 // var watchInterviewButton = document.querySelector("#interviewLink");
@@ -145,10 +145,10 @@ document.getElementById("donateNavMobile").addEventListener("click",function(e){
 //    e.preventDefault();
 // },false);
 
-document.getElementById("youthClickHere").addEventListener("click",function(e){
-   alert('Jonathan Skerritt Christian Youth Center website currently unavailable while court case "Parents of Portland Maine vs. Jonathan Skerritt Youth Centers Inc." is still active.');
-   e.preventDefault();
-},false);
+// document.getElementById("youthClickHere").addEventListener("click",function(e){
+//    alert('Jonathan Skerritt Christian Youth Center website currently unavailable while court case "Parents of Portland Maine vs. Jonathan Skerritt Youth Centers Inc." is still active.');
+//    e.preventDefault();
+// },false);
 
 
 
@@ -175,10 +175,10 @@ for (var i = 0; i < socialMediaIcons.length; i++) {
             socialMediaIcons[k].classList.remove("dimmed");
          }
       },false);
-      socialMediaIcons[j].addEventListener("click",function(e){
-         e.preventDefault();
-         alert("Jonathan Skerritt does not participate in social media because Jonathan Skerritt hates you.")
-      },false);
+      // socialMediaIcons[j].addEventListener("click",function(e){
+      //    e.preventDefault();
+      //    alert("Jonathan Skerritt does not participate in social media because Jonathan Skerritt hates you.")
+      // },false);
    })(i);
 }
 
