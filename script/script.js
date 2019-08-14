@@ -21,7 +21,8 @@ function deactivateScrollMenu(){
 }
 
 window.addEventListener("scroll", function(){
-   if (window.scrollY > 150){
+   console.log("pageYOffset is" + window.pageYOffset);
+   if (window.pageYOffset > 150){
       activateScrollMenu();
    } else {
       deactivateScrollMenu();
