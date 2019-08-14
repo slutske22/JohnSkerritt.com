@@ -577,8 +577,10 @@ TWO IMAGE ROW/COLUMN STYLES
       margin-bottom: 10px;
    }
 }
-@media (max-width: 600px){
+@media (max-width: 680px){
    .twoShot{
+      -ms-grid-columns: 1fr;
+      -ms-grid-rows: 1fr 1fr;
       grid-template-columns: 1fr;
    }
    .firstPanel, .secondPanel{
@@ -586,6 +588,8 @@ TWO IMAGE ROW/COLUMN STYLES
    }
    .secondPanel{
       background-color: rgb(255, 255, 255, 0.85);
+      -ms-grid-column: 1;
+      -ms-grid-row: 2;
    }
    .secondPanel h1{
       margin-top: 30px;
