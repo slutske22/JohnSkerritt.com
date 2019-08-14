@@ -1027,7 +1027,7 @@ footer input:focus{
    outline: none;
 }
 ::placeholder{
-   color: rgb(255,255,255,0.5)
+   color: rgba(255,255,255,0.5)
 }
 footer input:first-of-type{
    width: 60%;
