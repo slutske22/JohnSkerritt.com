@@ -323,6 +323,9 @@ NAV STYLES
    display: flex;
    align-items: center;
    justify-content: center;
+   display: -ms-flexbox;
+   -ms-flex-pack: center;
+   -ms-flex-align: center;
    border: none;
    width: 100%;
    height: 100%;
@@ -346,12 +349,13 @@ NAV STYLES
    display: none;
    position: absolute;
    top: -8px;
+   margin:auto;
    color: black;
    font-size: 70px;
    line-height: 40px;
    padding: 0;
    margin: 0;
-   text-align: center;
+   /* text-align: center; */
 }
 
 /* .mobileNavOpenButton a:before{
