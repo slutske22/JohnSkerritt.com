@@ -658,17 +658,10 @@ span.SH:first-of-type,span.JS:first-of-type{
 }
 
 #interview a{
+   position: static;
    float: right;
-   padding: 10px;
-   color: rgb(170, 0, 0);
-   border: 1px solid rgb(170, 0, 0);
-   transition: color, 0.25s;
-   transition: background-color, .25s;
 }
-#interview a:hover{
-   color: rgb(255, 255, 255);
-   background-color: rgb(170, 0, 0);
-}
+
 
 
 /***********************************************************************
@@ -910,7 +903,7 @@ YOUT CENTER BANNER STYLES
 }
 
 
-#youthClickHere{
+.clickHereForMoreInfo{
    position: absolute;
    bottom: 10px;
    right:10px;
@@ -920,7 +913,7 @@ YOUT CENTER BANNER STYLES
    transition: color, 0.25s;
    transition: background-color, .25s;
 }
-#youthClickHere:hover{
+.clickHereForMoreInfo:hover{
    color: rgb(255, 255, 255);
    background-color: rgb(195, 0, 0);
 }
