@@ -25,7 +25,8 @@ a{
    border-bottom: 1px solid white;
    transition: color, 0.25s;
 }
-a:hover{
+a:hover,
+a:focus{
    color: red;
    text-decoration: none;
    border-bottom: 1px solid red;
@@ -84,7 +85,8 @@ NAV STYLES
    font-size: 1.1em;
    padding: 10px;
 }
-.preNavBanner p:hover{
+.preNavBanner p:hover,
+.preNavBanner p:focus{
    cursor: pointer;
    background-color: rgb(170, 0, 0);
 
@@ -151,7 +153,8 @@ NAV STYLES
    background-color: rgb(195, 0, 0);
    transition: background-color, 0.5s;
 }
-.topNav.simple li:last-of-type:hover{
+.topNav.simple li:last-of-type:hover,
+.topNav.simple li:last-of-type:focus{
    background-color: rgb(170, 0, 0);
 }
 .topNav.simple li a{
@@ -166,7 +169,8 @@ NAV STYLES
       font-size: 1.2em;
    }
 }
-.topNav.simple li a:hover{
+.topNav.simple li a:hover,
+.topNav.simple li a:focus{
    background-color: rgb(200, 0, 0, 0.7);
 }
 
@@ -209,7 +213,8 @@ NAV STYLES
    background-color: rgb(195, 0, 0);
    transition: background-color, 0.5s;
 }
-.topNav.scroll li:last-of-type:hover{
+.topNav.scroll li:last-of-type:hover,
+.topNav.scroll li:last-of-type:focus{
    background-color: rgb(170, 0, 0);
 }
 .topNav.scroll li a{
@@ -234,7 +239,8 @@ NAV STYLES
       font-size: 0.8em;
    }
 }
-.topNav.scroll li a:hover{
+.topNav.scroll li a:hover,
+.topNav.scroll li a:focus{
    color: white;
    background-color: rgb(200, 0, 0);
 }
@@ -261,10 +267,12 @@ NAV STYLES
    text-transform: uppercase;
    transform: scaleY(0.8);
 }
-.donateNav a:hover{
+.donateNav a:hover
+.donateNav a:focus{
    background-color: rgb(170, 0, 0);
 }
-.donateNav a span:hover{
+.donateNav a span:hover,
+.donateNav a span:focus{
    text-decoration: underline;
 }
 #firstLI,#secondLI{
@@ -318,7 +326,8 @@ NAV STYLES
    width: 100%;
    height: 100%;
 }
-.mobileNavOpenButton a:hover{
+.mobileNavOpenButton a:hover,
+.mobileNavOpenButton a:focus{
    border: none;
    color: white;
 }
@@ -502,7 +511,8 @@ TWO IMAGE ROW/COLUMN STYLES
    display: block;
    margin: 20px auto;
 }
-.firstPanel:hover{
+.firstPanel:hover
+.firstPanel:focus{
    background-color: rgb(170, 0, 0);
 }
 .secondPanel .panelContent{
@@ -530,7 +540,8 @@ TWO IMAGE ROW/COLUMN STYLES
 .secondPanel .panelContent{
    max-width: 500px;
 }
-.secondPanel:hover{
+.secondPanel:hover,
+.secondPanel:focus{
    background-color: rgb(255, 255, 255, 0.85);
 }
 
@@ -867,7 +878,8 @@ YOUT CENTER BANNER STYLES
    background-color: rgb(190, 0, 0);
    transition: background-color, 1s;
 }
-.secondPanel.gospel:hover{
+.secondPanel.gospel:hover,
+.secondPanel.gospel:focus{
    background-color: rgb(170, 0, 0);
 }
 .secondPanel.gospel .panelContent{
@@ -913,7 +925,8 @@ YOUT CENTER BANNER STYLES
    transition: color, 0.25s;
    transition: background-color, .25s;
 }
-.clickHereForMoreInfo:hover{
+.clickHereForMoreInfo:hover,
+.clickHereForMoreInfo:focus{
    color: rgb(255, 255, 255);
    background-color: rgb(195, 0, 0);
 }
@@ -964,7 +977,7 @@ footer h3{
    margin-bottom: 25px;
    /* margin-left: 3px; */
 }
-footer .socialMedia a, footer .socialMedia a:hover{
+footer .socialMedia a, footer .socialMedia a:hover, footer .socialMedia a:focus{
    border-bottom: none;
 }
 

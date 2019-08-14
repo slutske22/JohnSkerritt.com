@@ -119,40 +119,6 @@ for (var i = 0; i < mobileLinks.length - 1; i++) {
 
 
 
-//////////////////////////////////////////////////////////////////////
-//                LINK PAGE ALERTS
-//////////////////////////////////////////////////////////////////////
-// document.getElementById("topBanner").addEventListener("click",function(e){
-//    alert("Rally cancelled temporarily.  Jonathan Skerritt PAC and Chattanooga City Council Events Administration in disputes over what is considered 'racially charged' political campaign signage.  Stay tuned for updates.");
-//    e.preventDefault();
-// },false);
-
-// var donateButtons = document.querySelector(".donateNav");
-// donateButtons.addEventListener("click",function(e){
-//    alert("The Jonathan Skerritt Political Action Campaign (PAC) is not accepting donations at this time due to unresolved allegations against the PAC by the Securities and Exchange Commission.  Check back later.");
-//    e.preventDefault();
-// },false);
-//
-// document.getElementById("donateNavMobile").addEventListener("click",function(e){
-//    alert("The Jonathan Skerritt Political Action Campaign (PAC) is not accepting donations at this time due to unresolved allegations against the PAC by the Securities and Exchange Commission.  Check back later.");
-//    e.preventDefault();
-// },false);
-
-
-// var watchInterviewButton = document.querySelector("#interviewLink");
-// watchInterviewButton.addEventListener("click",function(e){
-//    alert("Video currently unavailable due to an ongoing anti-libel lawsuit between Jonathan Skerritt Inc. and Fox news.");
-//    e.preventDefault();
-// },false);
-
-// document.getElementById("youthClickHere").addEventListener("click",function(e){
-//    alert('Jonathan Skerritt Christian Youth Center website currently unavailable while court case "Parents of Portland Maine vs. Jonathan Skerritt Youth Centers Inc." is still active.');
-//    e.preventDefault();
-// },false);
-
-
-
-
 
 //////////////////////////////////////////////////////////////////////
 //                FOOTER BEHAVIOR
@@ -193,7 +159,7 @@ var counter = 0;
 
 
 emailUI.addEventListener("keydown",function(e){
-   if (e.keyCode !== 8){
+   if (e.keyCode !== 8 && e.keyCode !== 9 && e.keyCode !== 13){
       e.preventDefault();
       counter++;
       emailUI.value = youCantBeSerious.slice(0,counter);
