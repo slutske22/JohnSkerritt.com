@@ -9,7 +9,7 @@ function activateScrollMenu(){
    navigation.classList.add("scroll");
    menuButton.classList.add("scroll");
    document.querySelector(".donateNav").classList.remove("simple");
-   document.querySelector(".mobileNavOpenButton a span").classList.add("scroll")
+   document.querySelector("#menuOpen").classList.add("scroll")
 }
 
 function deactivateScrollMenu(){
@@ -17,7 +17,7 @@ function deactivateScrollMenu(){
    navigation.classList.add("simple");
    menuButton.classList.remove("scroll");
    document.querySelector(".donateNav").classList.add("simple");
-   document.querySelector(".mobileNavOpenButton a span").classList.remove("scroll")
+   document.querySelector("#menuOpen").classList.remove("scroll")
 }
 
 window.addEventListener("scroll", function(){
@@ -39,6 +39,8 @@ window.addEventListener("scroll", function(){
 
 var menuButton = document.querySelector(".mobileNavOpenButton");
 var mobileMenu = document.querySelector(".mobileNav");
+var menuO = document.querySelector("#menuOpen");
+var menuX = document.querySelector("#menuClose");
 var mobileMenuIsOpen = false;
 
 //creates a hover effect, when hovering over the nav menu button, the word "menu" appears below it
@@ -56,14 +58,16 @@ var mobileMenuIsOpen = false;
 
    function openMobileMenu(){
       menuButton.classList.add("isOpen");
-      document.querySelector(".mobileNavOpenButton a span").style.display="block";
+      menuO.style.display="none";
+      menuX.style.display="block";
       mobileMenu.style.display = "block";
       activateScrollMenu()
    }
 
    function closeMobileMenu(){
       menuButton.classList.remove("isOpen");
-      document.querySelector(".mobileNavOpenButton a span").style.display="none";
+      menuX.style.display="none";
+      menuO.style.display="block";
       mobileMenu.style.display = "none";
       if (window.pageYOffset < 150){
          deactivateScrollMenu();

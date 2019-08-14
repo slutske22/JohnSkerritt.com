@@ -322,6 +322,7 @@ NAV STYLES
    position: relative;
    display: flex;
    align-items: center;
+   justify-content: center;
    border: none;
    width: 100%;
    height: 100%;
@@ -331,7 +332,29 @@ NAV STYLES
    border: none;
    color: white;
 }
-.mobileNavOpenButton a:before{
+
+
+.mobileNavOpenButton #menuOpen{
+   display: inline-block;
+   height: 60%;
+   width: 70%;
+   border-top: 5px solid white;
+   border-bottom: 5px solid white;
+}
+
+.mobileNavOpenButton #menuClose{
+   display: none;
+   position: absolute;
+   top: -8px;
+   color: black;
+   font-size: 70px;
+   line-height: 40px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+
+/* .mobileNavOpenButton a:before{
    display: inline-block;
    content: " ";
    position: absolute;
@@ -340,7 +363,6 @@ NAV STYLES
    height: 60%;
    width: 30px;
    border-top: 5px solid white;
-   transform: rotate(0deg);
 }
 .mobileNavOpenButton a:after{
    display: inline-block;
@@ -351,22 +373,15 @@ NAV STYLES
    height: 60%;
    width: 30px;
    border-bottom: 5px solid rgb(255, 255, 255, 1.0);
-   transform: rotate(0deg);
 }
 .mobileNavOpenButton.isOpen a:before{
    border-top: rgb(255, 255, 255, 0);
 }
 .mobileNavOpenButton.isOpen a:after{
    border-bottom: rgb(255, 255, 255, 0);
-}
-.mobileNavOpenButton a span{
-   display: none;
-   transform: scaleX(1.2);
-   font-size: 40px;
-   width: 100%;
-   vertical-align: middle;
-   text-align: center;
-}
+} */
+
+
 
 .mobileNavMenu{
    display: none;
@@ -432,8 +447,8 @@ NAV STYLES
       border-color: black;
    }
 
-   .mobileNavOpenButton a span.scroll{
-      color: black;
+   #menuOpen.scroll{
+      border-color: black;
    }
 
 }
