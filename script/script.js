@@ -139,11 +139,11 @@ document.getElementById("donateNavMobile").addEventListener("click",function(e){
 },false);
 
 
-var watchInterviewButton = document.querySelector("#interviewLink");
-watchInterviewButton.addEventListener("click",function(e){
-   alert("Video currently unavailable due to an ongoing anti-libel lawsuit between Jonathan Skerritt Inc. and Fox news.");
-   e.preventDefault();
-},false);
+// var watchInterviewButton = document.querySelector("#interviewLink");
+// watchInterviewButton.addEventListener("click",function(e){
+//    alert("Video currently unavailable due to an ongoing anti-libel lawsuit between Jonathan Skerritt Inc. and Fox news.");
+//    e.preventDefault();
+// },false);
 
 document.getElementById("youthClickHere").addEventListener("click",function(e){
    alert('Jonathan Skerritt Christian Youth Center website currently unavailable while court case "Parents of Portland Maine vs. Jonathan Skerritt Youth Centers Inc." is still active.');

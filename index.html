@@ -5,9 +5,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Jonathan Skerritt 2020</title>
       <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/styles.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+
+      <link rel="stylesheet" href="css/styles.css">
       <script type="text/javascript" src="script/script.js" defer></script>
 
 
@@ -25,7 +29,7 @@
          <div class="topImgWrapper">
 
             <div class="bannerWrapper">
-               <img id="mainLogo" src="images/icons/MainLogo.png">
+               <!-- <img id="mainLogo" src="images/icons/MainLogo.png"> -->
 
                <nav role="navigation" class="topNav simple">
                   <ul>
@@ -96,11 +100,37 @@
             <div id="campaignTrail" class="navAnchor"> </div>
             <div class="bannerWrapper p-5">
                <h1>Skerritt on Hannity</h1>
-               <h2>October 21, 8:00 PM EST: <a id="interviewLink" href="">Watch the Interview</a></h2>
+               <h2>October 21, 8:00 PM EST:
+                  <a id="interviewLink" data-toggle="modal" href="#watchInterviewModal">Watch the Interview</a></h2>
                <p>Watch Senator Skerritt chat with old friend Sean Hannity about his campaign, policy stances, and his next moves.  Or, <a href="#interviewAnchor">read the transcript of the interview.</a>
-            </div>
+            </div> <!-- bannerWrapper -->
+         </div> <!-- hannityBanner -->
 
-         </div>
+
+         <!-- Modal for "Watch Inteview" Link -->
+         <div id="watchInterviewModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+               <!-- modal content -->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close"
+                        data-dismiss="modal">&times;</button>
+                  </div> <!-- modal-header -->
+                  <div class="modal-body">
+                     <p>Video currently unavailable due to an ongoing anti-libel lawsuit between Jonathan Skerritt Inc. and Fox news.</p>
+                  </div><!-- modal-body -->
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default"
+                        data-dismiss="modal">Close</button>
+                  </div>
+               </div> <!-- modal-content -->
+
+            </div> <!-- modal-dialog -->
+         </div> <!-- modal fade -->
+
+
+
 
          <div id="interview">
             <div id="interviewAnchor" class="navAnchor"> </div>
