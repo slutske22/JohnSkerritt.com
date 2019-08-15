@@ -44,7 +44,9 @@ a:focus{
 /***********************************************************************
 SOME HELPFUL DEFINITIONS
 ************************************************************************/
-.invert { filter: invert(100%); }
+.invert {
+   filter: invert(100%);
+}
 
 /* Bootstrap Breakpoints */
 
@@ -499,7 +501,7 @@ TWO IMAGE ROW/COLUMN STYLES
    color: white;
    align-items: center;
    justify-content: center;
-   background-color: rgb(195, 0, 0, 1);
+   background-color: rgba(195, 0, 0, 1);
    transition: background-color, 1s;
 }
 .firstPanel img{
@@ -509,7 +511,7 @@ TWO IMAGE ROW/COLUMN STYLES
 }
 .firstPanel:hover
 .firstPanel:focus{
-   background-color: rgb(170, 0, 0, 1);
+   background-color: rgba(170, 0, 0, 1);
 }
 .secondPanel .panelContent{
    max-width: 450px;
