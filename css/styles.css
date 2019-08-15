@@ -730,10 +730,11 @@ POLICY SECTION STYLES
 
 
 #policy .wrapper{
-   display: flex;
    position: relative;
+   display: flex;
    align-items: center;
    justify-content: center;
+   text-align: justify;
    height: 365px;
    width: 100%;
 }
@@ -742,8 +743,13 @@ POLICY SECTION STYLES
 }
 #policy .wrapper img{
    position: absolute;
+   left: 50%;
+   margin-left: -35%;
+   top: 50%;
+   margin-top: -35%;
    width: 70%;
    opacity: 1;
+  /* this section contains a dumbass fix for centering things becaue of IE */
 }
 @media (max-width: 992px) {
    #policy .wrapper img{
