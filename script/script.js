@@ -119,6 +119,8 @@ for (var i = 0; i < mobileLinks.length - 1; i++) {
       }
       console.log("window resized");
    }
+
+   // window.addEventListener("resize",closeMobileNav(),false);
    //not complete yet but probably good enough for most purposes
 
 
