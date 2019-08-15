@@ -40,6 +40,16 @@ a:focus{
    max-width: 1600px;
 }
 
+.background-overlay{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   bottom: 0px;
+   right: 0px;
+}
+
 
 /***********************************************************************
 SOME HELPFUL DEFINITIONS
@@ -515,6 +525,7 @@ TWO IMAGE ROW/COLUMN STYLES
 }
 .secondPanel .panelContent{
    max-width: 450px;
+   z-index: 2;
 }
 
 .secondPanel{
@@ -531,17 +542,17 @@ TWO IMAGE ROW/COLUMN STYLES
    background-repeat: no-repeat;
    background-position: center bottom;
    background-size: cover;
-   background-blend-mode: overlay;
-   background-color: rgb(255, 255, 255, 0.7);
-   transition: background-color, 1s;
+}
+.secondPanel .background-overlay{
+   background-color: rgba(255, 255, 255, 0.85);
 }
 .secondPanel .panelContent{
    max-width: 500px;
 }
-.secondPanel:hover,
+/* .secondPanel:hover,
 .secondPanel:focus{
    background-color: rgb(255, 255, 255, 0.85);
-}
+} */
 
 
 .twoShot h1{
@@ -606,10 +617,10 @@ HANNITY BANNER STYLES
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
-   background-color: rgb(0, 0, 0, 0.3);
-   background-blend-mode: overlay;
-
    color:white;
+}
+#hannityBanner .background-overlay{
+   background-color: rgba(0, 0, 0, 0.3);
 }
 
 #hannityBanner p{
@@ -806,8 +817,9 @@ YOUT CENTER BANNER STYLES
    background-repeat: no-repeat;
    background-position: center bottom;
    background-size: cover;
-   background-color: rgb(0, 0, 0, 0.5);
-   background-blend-mode: overlay;
+}
+.gospelOfJohn .background-overlay{
+   background-color: rgba(0, 0, 0, 0.5);
 }
 .gospelOfJohn *{
    color: white;
