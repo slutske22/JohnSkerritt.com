@@ -498,8 +498,24 @@ TWO IMAGE ROW/COLUMN STYLES
    -ms-grid-rows: 1fr;
    width:100%;
 }
-
 /* for supporting grid in IE:  https://medium.com/@elad/supporting-css-grid-in-internet-explorer-b38669e75d66 */
+
+.twoShot h1{
+   margin-top: 10px;
+   width: 100%;
+   text-align: center;
+   font-size: 1.5em;
+}
+.twoShot h2{
+   margin-top: 5px;
+   width: 100%;
+   text-align: center;
+   font-size: 1.2em;
+}
+.twoShot p{
+   text-align: center;
+   padding: 0px 20px;
+}
 
 .firstPanel{
    display: flex;
@@ -549,32 +565,10 @@ TWO IMAGE ROW/COLUMN STYLES
 .secondPanel .panelContent{
    max-width: 500px;
 }
-/* .secondPanel:hover,
-.secondPanel:focus{
-   background-color: rgb(255, 255, 255, 0.85);
-} */
-
-
-.twoShot h1{
-   margin-top: 10px;
-   width: 100%;
-   text-align: center;
-   font-size: 1.5em;
-}
-.twoShot h2{
-   margin-top: 5px;
-   width: 100%;
-   text-align: center;
-   font-size: 1.2em;
-}
-.twoShot p{
-   text-align: center;
-   padding: 0px 20px;
-}
-
 .secondPanel h1, .secondPanel h2{
    margin-bottom: 30px;
 }
+
 @media (max-width: 1000px){
    .secondPanel h1, .secondPanel h2{
       margin-bottom: 10px;
@@ -590,7 +584,6 @@ TWO IMAGE ROW/COLUMN STYLES
       height: 50vh;
    }
    .secondPanel{
-      background-color: rgb(255, 255, 255, 0.85);
       -ms-grid-column: 1;
       -ms-grid-row: 2;
    }
@@ -765,11 +758,15 @@ POLICY SECTION STYLES
 @media (max-width: 992px) {
    #policy .wrapper img{
       width: 60%;
+      margin-top: -30%;
+      margin-left: -30%;
    }
 }
 @media (max-width: 768px) {
    #policy .wrapper img{
       width: 50%;
+      margin-top: -25%;
+      margin-left: -25%;
    }
 }
 #policy .wrapper img.tooDark{
