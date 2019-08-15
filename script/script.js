@@ -21,7 +21,6 @@ function deactivateScrollMenu(){
 }
 
 window.addEventListener("scroll", function(){
-   console.log("pageYOffset is" + window.pageYOffset);
    if (window.pageYOffset > 150){
       activateScrollMenu();
    } else {
@@ -117,7 +116,6 @@ for (var i = 0; i < mobileLinks.length - 1; i++) {
          deactivateScrollMenu();
          mobileMenuIsOpen = false;
       }
-      console.log("window resized");
    }
 
    // window.addEventListener("resize",closeMobileNav(),false);
@@ -164,6 +162,8 @@ var zipUI = document.querySelector("#zipInput");
 var youCantBeSerious = "You can't be serious";
 var counter = 0;
 
+var boobs = "80085";
+var counterZip = 0;
 
 emailUI.addEventListener("keydown",function(e){
    if (e.keyCode !== 8 && e.keyCode !== 9 && e.keyCode !== 13){
@@ -171,7 +171,23 @@ emailUI.addEventListener("keydown",function(e){
       counter++;
       emailUI.value = youCantBeSerious.slice(0,counter);
    }
-   if (e.keyCode === 8){
+   if (e.keyCode === 8 && counter !== 0){
       counter--;
+   }
+},false);
+
+zipUI.addEventListener("keydown",function(e){
+   if (e.keyCode !== 8 && e.keyCode !== 9 && e.keyCode !== 13){
+      e.preventDefault();
+      counterZip++;
+      zipUI.value = boobs.slice(0,counterZip);
+   }
+   if (e.keyCode === 8 && counterZip !== 0){
+      counterZip--;
+   }
+   if (counterZip > 0) {
+      zipUI.style.fontFamily = " 'Orbitron', sans-serif ";
+   } else {
+      zipUI.style.fontFamily = " 'Helvetica Neue', Helvetica, Arial, sans-serif ";
    }
 },false);
