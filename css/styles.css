@@ -16,8 +16,8 @@ html{
 body{
    width:100%;
    /* height: 100%; */
-   margin: 0;
-   padding: 0;
+   margin: 0px;
+   padding: 0px;
 }
 a{
    color: white;
@@ -347,45 +347,15 @@ NAV STYLES
 
 .mobileNavOpenButton #menuClose{
    display: none;
-   position: absolute;
-   top: -8px;
-   right: -4px;
-   margin:auto;
+   height: 100%;
+   vertical-align: middle;
+   margin: 0 auto;
    color: black;
    font-size: 70px;
-   line-height: 40px;
+   line-height: 30px;
    padding: 0;
    margin: 0;
-   /* text-align: center; */
 }
-
-/* .mobileNavOpenButton a:before{
-   display: inline-block;
-   content: " ";
-   position: absolute;
-   top: 25%;
-   left: 5px;
-   height: 60%;
-   width: 30px;
-   border-top: 5px solid white;
-}
-.mobileNavOpenButton a:after{
-   display: inline-block;
-   content: " ";
-   position: absolute;
-   top: 15%;
-   left: 5px;
-   height: 60%;
-   width: 30px;
-   border-bottom: 5px solid rgb(255, 255, 255, 1.0);
-}
-.mobileNavOpenButton.isOpen a:before{
-   border-top: rgb(255, 255, 255, 0);
-}
-.mobileNavOpenButton.isOpen a:after{
-   border-bottom: rgb(255, 255, 255, 0);
-} */
-
 
 
 .mobileNavMenu{
@@ -529,7 +499,7 @@ TWO IMAGE ROW/COLUMN STYLES
    color: white;
    align-items: center;
    justify-content: center;
-   background-color: rgb(195, 0, 0);
+   background-color: rgb(195, 0, 0, 1);
    transition: background-color, 1s;
 }
 .firstPanel img{
@@ -539,7 +509,7 @@ TWO IMAGE ROW/COLUMN STYLES
 }
 .firstPanel:hover
 .firstPanel:focus{
-   background-color: rgb(170, 0, 0);
+   background-color: rgb(170, 0, 0, 1);
 }
 .secondPanel .panelContent{
    max-width: 450px;
