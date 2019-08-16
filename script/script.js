@@ -174,6 +174,9 @@ emailUI.addEventListener("keydown",function(e){
    if (e.keyCode === 8 && counter !== 0){
       counter--;
    }
+   if (emailUI.value.length == 0) {
+      counter = 0;
+   }
 },false);
 
 zipUI.addEventListener("keydown",function(e){
@@ -190,4 +193,10 @@ zipUI.addEventListener("keydown",function(e){
    } else {
       zipUI.style.fontFamily = " 'Helvetica Neue', Helvetica, Arial, sans-serif ";
    }
+   if (zipUI.value.length === 0) {
+      counterZip = 0;
+   }
+
+   console.log(`zipUI length is ${zipUI.value.length} and counterZip is ${counterZip}`)
+
 },false);
