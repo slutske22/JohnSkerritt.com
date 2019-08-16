@@ -231,3 +231,23 @@ zipUI.addEventListener("keydown",function(e){
 
 
 },false);
+
+
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//
+//                MODAL BEHAVIOR
+//
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+modalDonateButton = document.querySelector("#modalDonateButton");
+readFullInterviewModal = document.querySelector("#readFullInterviewModal");
+
+modalDonateButton.addEventListener("click", function(){
+
+   $('#readFullInterviewModal').modal('hide');
+   $('#donateModal').modal('show');
+
+},false);
