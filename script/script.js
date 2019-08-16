@@ -1,5 +1,9 @@
 //////////////////////////////////////////////////////////////////////
-//                SCROLL NAV BEHAVIOR
+//////////////////////////////////////////////////////////////////////
+//
+//         SCROLL NAV BEHAVIOR
+//
+//////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
 var navigation = document.querySelector(".topNav");
@@ -30,9 +34,12 @@ window.addEventListener("scroll", function(){
 
 
 
-
 //////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//
 //         MOBILE NAV AND MENU BUTTON BEHAVIOR
+//
+//////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
 
@@ -101,11 +108,6 @@ for (var i = 0; i < mobileLinks.length - 1; i++) {
 }
 
 
-
-
-
-
-
 // little code to make sure that if user sizes window down to mobile size, then opens menu, then resizes the window to be too large without having closed the mobile menu
 
    function closeMobileNav(){
@@ -124,37 +126,44 @@ for (var i = 0; i < mobileLinks.length - 1; i++) {
 
 
 
-
 //////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//
 //                FOOTER BEHAVIOR
+//
 //////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+
+//SOCIAL MEDIA ICON HOVER BEHAVIOR
 
 var socialMediaIcons = document.querySelectorAll("footer .socialMedia img");
 
-//on hover of an icon, make the others dim away
 for (var i = 0; i < socialMediaIcons.length; i++) {
    (function(j){
+
+      //on hover of an icon, make the others dim away
       socialMediaIcons[j].addEventListener("mouseover",function(){
          for (var k = 0; k < socialMediaIcons.length; k++) {
             socialMediaIcons[k].classList.add("dimmed");
          }
          socialMediaIcons[j].classList.remove("dimmed");
       },false);
+
       //remove dimmed effect on mouseout
       socialMediaIcons[j].addEventListener("mouseout",function(){
-         for (var k = 0; k < socialMediaIcons.length; k++) {
-            socialMediaIcons[k].classList.remove("dimmed");
-         }
+         var delayUndim = setTimeout( function(){
+            for (var k = 0; k < socialMediaIcons.length; k++) {
+               socialMediaIcons[k].classList.remove("dimmed");
+            }
+         }, 500)
       },false);
-      // socialMediaIcons[j].addEventListener("click",function(e){
-      //    e.preventDefault();
-      //    alert("Jonathan Skerritt does not participate in social media because Jonathan Skerritt hates you.")
-      // },false);
+
    })(i);
 }
 
 
-//code to reveal "you can't be serious" when user tries to put in email
+// INPUT TEXT FIELDS BEHAVIOR
 
 var emailUI = document.querySelector("#emailInput");
 var zipUI = document.querySelector("#zipInput");
