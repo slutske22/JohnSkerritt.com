@@ -1024,7 +1024,7 @@ footer input:last-of-type{
 footer .socialMedia img{
    width: 50px;
    margin: 0px 3px;
-   transition: opacity, .35s;
+   transition: opacity, .5s;
 }
 .dimmed{
    opacity: 0.5;

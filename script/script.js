@@ -152,11 +152,16 @@ for (var i = 0; i < socialMediaIcons.length; i++) {
 
       //remove dimmed effect on mouseout
       socialMediaIcons[j].addEventListener("mouseout",function(){
-         var delayUndim = setTimeout( function(){
-            for (var k = 0; k < socialMediaIcons.length; k++) {
-               socialMediaIcons[k].classList.remove("dimmed");
-            }
-         }, 500)
+
+         for (var k = 0; k < socialMediaIcons.length; k++) {
+            socialMediaIcons[k].classList.remove("dimmed");
+         }
+         // var delayUndim = setTimeout( function(){
+         //    for (var k = 0; k < socialMediaIcons.length; k++) {
+         //       socialMediaIcons[k].classList.remove("dimmed");
+         //    }
+         // }, 500)
+
       },false);
 
    })(i);
