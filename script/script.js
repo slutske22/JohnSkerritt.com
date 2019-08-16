@@ -243,7 +243,6 @@ zipUI.addEventListener("keydown",function(e){
 //////////////////////////////////////////////////////////////////////
 
 modalDonateButton = document.querySelector("#modalDonateButton");
-readFullInterviewModal = document.querySelector("#readFullInterviewModal");
 
 modalDonateButton.addEventListener("click", function(){
 
