@@ -166,37 +166,54 @@ var boobs = "80085";
 var counterZip = 0;
 
 emailUI.addEventListener("keydown",function(e){
-   if (e.keyCode !== 8 && e.keyCode !== 9 && e.keyCode !== 13){
+   if (e.key.length === 1 && counter <= youCantBeSerious.length){
       e.preventDefault();
-      counter++;
-      emailUI.value = youCantBeSerious.slice(0,counter);
+      if (counter < youCantBeSerious.length) {
+         counter++;
+      }
    }
    if (e.keyCode === 8 && counter !== 0){
-      counter--;
+      e.preventDefault();
+      if (window.getSelection().toString().length > 0){
+         counter = counter - window.getSelection().toString().length
+      } else {
+         counter--;
+      }
    }
-   if (emailUI.value.length == 0) {
-      counter = 0;
-   }
+   emailUI.value = youCantBeSerious.slice(0,counter);
+
+
+   console.log(`emailUI length is ${emailUI.value.length} and counter is ${counter}`)
+   console.log(`you pressed the ${e.key} key`)
+
+
 },false);
 
 zipUI.addEventListener("keydown",function(e){
-   if (e.keyCode !== 8 && e.keyCode !== 9 && e.keyCode !== 13){
+   if (e.key.length === 1 && counterZip <= boobs.length){
       e.preventDefault();
-      counterZip++;
-      zipUI.value = boobs.slice(0,counterZip);
+      if (counterZip < boobs.length) {
+         counterZip++;
+      }
    }
-   if (e.keyCode === 8 && counterZip !== 0){
-      counterZip--;
+   else if (e.keyCode === 8 && counterZip !== 0){
+      e.preventDefault();
+      if (window.getSelection().toString().length > 0){
+         counterZip = counterZip - window.getSelection().toString().length
+      } else {
+         counterZip--;
+      }
    }
+   zipUI.value = boobs.slice(0,counterZip);
+
+   //change font to orbitron if there are any typed characters in the zip field
    if (counterZip > 0) {
       zipUI.style.fontFamily = " 'Orbitron', sans-serif ";
    } else {
       zipUI.style.fontFamily = " 'Helvetica Neue', Helvetica, Arial, sans-serif ";
    }
-   if (zipUI.value.length === 0) {
-      counterZip = 0;
-   }
 
    console.log(`zipUI length is ${zipUI.value.length} and counterZip is ${counterZip}`)
+
 
 },false);
