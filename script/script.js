@@ -112,15 +112,13 @@ for (var i = 0; i < mobileLinks.length - 1; i++) {
 
    function closeMobileNav(){
       if (window.innerWidth >= 750){
-         menuButton.classList.remove("isOpen");
-         document.querySelector(".mobileNavOpenButton a span").style.display="none";
-         mobileMenu.style.display = "none";
+         closeMobileMenu();
          deactivateScrollMenu();
          mobileMenuIsOpen = false;
       }
    }
 
-   // window.addEventListener("resize",closeMobileNav(),false);
+   window.addEventListener("resize",closeMobileNav(),false);
    //not complete yet but probably good enough for most purposes
 
 
