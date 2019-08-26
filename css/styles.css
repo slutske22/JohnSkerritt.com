@@ -97,12 +97,17 @@ NAV STYLES
    font-size: 1.1em;
    padding: 10px;
 }
+@media(max-width: 375px){
+   .preNavBanner p{
+      font-size: 0.95em;
+   }
+}
 .preNavBanner p:hover,
 .preNavBanner p:focus{
    cursor: pointer;
    background-color: rgb(170, 0, 0);
-
 }
+
 
 
 /* Main Top image styles */
@@ -312,6 +317,19 @@ NAV STYLES
    }
    #donateNav{
       display: none;
+   }
+}
+@media(max-width: 420px){
+   #firstLI{
+      padding-left: 10px;
+   }
+}
+@media(max-width: 375px){
+   #firstLI{
+      display: none;
+   }
+   #secondLI{
+      display: inline-block;
    }
 }
 
@@ -532,8 +550,8 @@ TWO IMAGE ROW/COLUMN STYLES
 
 .firstPanel{
    display: flex;
-   height:50vh;
-   max-height: 350px;
+   /* height: auto; */
+   /* max-height: 350px; */
    padding: 0px 20px;
    overflow:hidden;
    position:relative;
@@ -560,8 +578,8 @@ TWO IMAGE ROW/COLUMN STYLES
 .secondPanel{
    -ms-grid-column: 2;
    display: flex;
-   height:50vh;
-   max-height: 350px;
+   /* height: auto; */
+   /* max-height: 350px; */
    padding: 0px 20px;
    overflow:hidden;
    position:relative;
@@ -594,7 +612,7 @@ TWO IMAGE ROW/COLUMN STYLES
       grid-template-columns: 1fr;
    }
    .firstPanel, .secondPanel{
-      height: 50vh;
+      min-height: 60vh;
    }
    .secondPanel{
       -ms-grid-column: 1;
@@ -1007,6 +1025,12 @@ footer .bannerWrapper div div{
    .inputs.innerWrapper{
       align-items: center;
       width: 80%;
+   }
+}
+@media (max-width: 425px){
+   .inputs.innerWrapper{
+      align-items: center;
+      width: 100%;
    }
 }
 
