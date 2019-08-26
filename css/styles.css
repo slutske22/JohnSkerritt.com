@@ -162,12 +162,12 @@ NAV STYLES
    padding: 0;
 }
 .topNav.simple li:last-of-type{
-   background-color: rgb(195, 0, 0);
+   background-color: rgb(170, 0, 0);
    transition: background-color, 0.5s;
 }
 .topNav.simple li:last-of-type:hover,
 .topNav.simple li:last-of-type:focus{
-   background-color: rgb(170, 0, 0);
+   background-color: rgb(195, 0, 0);
 }
 .topNav.simple li a{
    font-size: 1.4em;
@@ -281,12 +281,15 @@ NAV STYLES
 }
 .donateNav a:hover
 .donateNav a:focus{
-   background-color: rgb(170, 0, 0);
+   background-color: rgb(195, 0, 0);
 }
 .donateNav a span:hover,
 .donateNav a span:focus{
    text-decoration: underline;
 }
+
+
+
 #firstLI,#secondLI{
    display: none;
    list-style: none;
