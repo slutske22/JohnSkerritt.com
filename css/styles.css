@@ -550,8 +550,7 @@ TWO IMAGE ROW/COLUMN STYLES
 
 .firstPanel{
    display: flex;
-   /* height: auto; */
-   /* max-height: 350px; */
+   min-height: 50vh;
    padding: 0px 20px;
    overflow:hidden;
    position:relative;
@@ -578,8 +577,7 @@ TWO IMAGE ROW/COLUMN STYLES
 .secondPanel{
    -ms-grid-column: 2;
    display: flex;
-   /* height: auto; */
-   /* max-height: 350px; */
+   min-height: 50vh;
    padding: 0px 20px;
    overflow:hidden;
    position:relative;
