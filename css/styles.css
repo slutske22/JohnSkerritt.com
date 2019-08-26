@@ -1003,6 +1003,13 @@ footer .bannerWrapper div div{
    margin: 0px 15px;
 }
 
+@media (max-width: 767px){
+   .inputs.innerWrapper{
+      align-items: center;
+      width: 80%;
+   }
+}
+
 
 
 footer h3{
