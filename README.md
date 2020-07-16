@@ -5,7 +5,7 @@
 ![banner](/images/banner.png)
 <br>
 <br>
-JonathanSkeritt.com is a gag website created for a coworker.  It is an exercise in CSS and static webpage construction.  Using simple media queries and basic javascript, a hilarious result in achieved.
+JonathanSkeritt.com is a gag website created for a coworker.  It is an exercise in static webpage construction and AWS / Google Domains hosting and DNS routing.  Using simple media queries, basic javascript, and a cheap domain registration, a hilarious result in achieved.
 <br>
 <br>
 ### AWS Hosted
